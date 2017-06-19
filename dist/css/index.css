@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* sectionSlider設定 */
+#sectionSlider {
+  border: 1px dotted #87CEFA;
+  padding: 0px; }
+
+/* sectionContent設定 */
+#sectionContent {
+  border: 1px dotted #87CEFA; }
+
+/* sectionContent div設定 */
+#sectionContent div {
+  border: 1px dotted #87CEFA; }

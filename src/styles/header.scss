@@ -11,7 +11,7 @@ body {
     padding-top: 80px;
 }
 
-@media screen and(max-width:984px) {
+@media screen and (min-width: 768px) and (max-width:984px) {
     body {
         padding-top: 155px;
     }
@@ -40,15 +40,20 @@ body {
 }
 
 
-/* 導覽列背景色、字體、margin */
+/* 導覽列背景色、字體 */
 
 #navLayout {
     background-color: #ffffff;
     font-size: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
+/* 導覽列左右內縮40px */
+#navLeft {
+    margin-left: 40px;
+}
+#navMenu {
+    margin-right: 40px;
+}
 
 /* 導覽列文字垂直置中 */
 
@@ -255,42 +260,4 @@ body {
 
 .nav .afterLogin {
     display: none;
-}
-
-
-/* sectionSlider設定 */
-
-#sectionSlider {
-    text-align: center;
-    margin: 5px 40px;
-    height: 30%;
-    border: 1px dotted #87CEFA;
-}
-
-
-/* sectionContent設定 */
-
-#sectionContent {
-    text-align: center;
-    margin: 5px 40px;
-    height: 30%;
-    border: 1px dotted #87CEFA;
-}
-
-
-/* sectionContent div設定 */
-
-#sectionContent div {
-    text-align: left;
-    margin: 5px 40px;
-    border: 1px dotted #87CEFA;
-}
-
-
-/* footer設定 */
-
-footer {
-    text-align: center;
-    margin: 5px 40px;
-    border: 1px dotted #87CEFA;
 }
