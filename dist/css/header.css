@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/* 內容跟頂端的距離 */
+body {
+  padding-top: 80px; }
+
+@media screen and (max-width: 984px) {
+  body {
+    padding-top: 155px; } }
+
 /* 手機選單鈕垂直位置 */
 #navButton {
   margin-top: 15px; }
