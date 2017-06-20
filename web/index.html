@@ -35,7 +35,7 @@
 				</button>
 
 				<!-- Logo -->
-				<a href="#" id="navLogo" class="navbar-brand">
+				<a href="index.html" id="navLogo" class="navbar-brand">
 					<img src="../dist/img/WeShare_logo.png" width="60" alt="WeShare">
 				</a>
 			</div>
@@ -72,7 +72,7 @@
 				<!-- 右選單-->
 				<ul id="navMenuRight" class="nav navbar-nav navbar-right">
 					<li class="beforeLogin">
-						<a href="#" id="navLogin">
+						<a href="login.html" id="navLogin">
 							<span>登入 / 註冊</span>
 							<span></span>
 						</a>
@@ -182,47 +182,79 @@
 			<!--許願池標題-->
 			<div id="wishTitle" class="row sectionTitle">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h3>
-						<span class="pull-left"><a href="#">許願池</a></span>
-						<small class="pull-right"><a href="#">即將結束</a></small>
-						<small class="pull-right">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</small>
-						<small class="pull-right"><a href="#">最新刊登</a></small>
-					</h3>
+					<div class="row">
+						<div class="col-xs-4 col-sm-6 col-md-6 col-lg-6">
+							<div class="text-left">
+								<a href="#" class="titleLeft">許願池</a>
+							</div>
+						</div>
+						<div class="col-xs-8 col-sm-6 col-md-6 col-lg-6">
+							<div class="text-right">
+								<a href="#" class="titleRight">最新刊登</a>
+								<span class="titleRight">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+								<a href="#" class="titleRight">即將結束</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<!--許願池物資清單-->
 			<div id="wishContent" class="row ">
-				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+				<!--<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="wishItem">
 						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
 						<div class="itemGroup itemContent"><a href="#">物資1社福團體</a></div>
 						<div class="itemName itemContent"><a href="#">物資1名稱</a></div>
 						<div class="itemText itemContent">物資1說明</div>
 					</div>
+				</div>-->
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+					<div class="wishItem">
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資1發佈者</a></div>
+						<div class="itemName itemContent"><a href="#">物資1名稱</a></div>
+					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="wishItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資2社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資2發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資2名稱</a></div>
-						<div class="itemText itemContent">物資2說明</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="wishItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資3社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資3發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資3名稱</a></div>
-						<div class="itemText itemContent">物資3說明</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="wishItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資4社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資4發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資4名稱</a></div>
-						<div class="itemText itemContent">物資4說明</div>
 					</div>
 				</div>
 			</div>
@@ -230,12 +262,20 @@
 			<!--送愛心標題-->
 			<div id="giveTitle" class="row sectionTitle">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h3>
-						<span class="pull-left"><a href="#">送愛心</a></span>
-						<small class="pull-right"><a href="#">即將結束</a></small>
-						<small class="pull-right">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</small>
-						<small class="pull-right"><a href="#">最新刊登</a></small>
-					</h3>
+					<div class="row">
+						<div class="col-xs-4 col-sm-6 col-md-6 col-lg-6">
+							<div class="text-left">
+								<a href="#" class="titleLeft">送愛心</a>
+							</div>
+						</div>
+						<div class="col-xs-8 col-sm-6 col-md-6 col-lg-6">
+							<div class="text-right">
+								<a href="#" class="titleRight">最新刊登</a>
+								<span class="titleRight">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+								<a href="#" class="titleRight">即將結束</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -243,34 +283,50 @@
 			<div id="giveContent" class="row">
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="giveItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資1社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資1發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資1名稱</a></div>
-						<div class="itemText itemContent">物資1說明</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="giveItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資2社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資2發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資2名稱</a></div>
-						<div class="itemText itemContent">物資2說明</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="giveItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資3社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資3發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資3名稱</a></div>
-						<div class="itemText itemContent">物資3說明</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="giveItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資4社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資4發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資4名稱</a></div>
-						<div class="itemText itemContent">物資4說明</div>
 					</div>
 				</div>
 			</div>
@@ -278,12 +334,20 @@
 			<!--以物易物標題-->
 			<div id="exchangeTitle" class="row sectionTitle">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<h3>
-						<span class="pull-left"><a href="#">以物易物</a></span>
-						<small class="pull-right"><a href="#">即將結束</a></small>
-						<small class="pull-right">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</small>
-						<small class="pull-right"><a href="#">最新刊登</a></small>
-					</h3>
+					<div class="row">
+						<div class="col-xs-4 col-sm-6 col-md-6 col-lg-6">
+							<div class="text-left">
+								<a href="#" class="titleLeft">以物易物</a>
+							</div>
+						</div>
+						<div class="col-xs-8 col-sm-6 col-md-6 col-lg-6">
+							<div class="text-right">
+								<a href="#" class="titleRight">最新刊登</a>
+								<span class="titleRight">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+								<a href="#" class="titleRight">即將結束</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -291,34 +355,50 @@
 			<div id="exchangeContent" class="row">
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="exchangeItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資1社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資1發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資1名稱</a></div>
-						<div class="itemText itemContent">物資1說明</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="exchangeItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資2社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資2發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資2名稱</a></div>
-						<div class="itemText itemContent">物資2說明</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="exchangeItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資3社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資3發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資3名稱</a></div>
-						<div class="itemText itemContent">物資3說明</div>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
 					<div class="exchangeItem">
-						<a href="#"><img class="img-responsive" src="../dist/img/WeShare_logo.png"></a>
-						<div class="itemGroup itemContent"><a href="#">物資4社福團體</a></div>
+						<div>
+							<a href="#" class="itemA">
+								<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+								<div class="itemOverlay">詳細說明</div>
+							</a>
+						</div>
+						<div class="itemBy itemContent"><a href="#">物資4發佈者</a></div>
 						<div class="itemName itemContent"><a href="#">物資4名稱</a></div>
-						<div class="itemText itemContent">物資4說明</div>
 					</div>
 				</div>
 			</div>

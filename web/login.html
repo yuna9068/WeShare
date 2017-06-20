@@ -35,7 +35,7 @@
 				</button>
 
 				<!-- Logo -->
-				<a href="#" id="navLogo" class="navbar-brand">
+				<a href="index.html" id="navLogo" class="navbar-brand">
 					<img src="../dist/img/WeShare_logo.png" width="60" alt="WeShare">
 				</a>
 			</div>
@@ -72,7 +72,7 @@
 				<!-- 右選單-->
 				<ul id="navMenuRight" class="nav navbar-nav navbar-right">
 					<li class="beforeLogin">
-						<a href="#" id="navLogin">
+						<a href="login.html" id="navLogin">
 							<span>登入 / 註冊</span>
 							<span></span>
 						</a>
@@ -116,25 +116,30 @@
 		</nav>
 	</header>
 
-	<section id="loginContent" class="container">
-        <!--<form class="form-signin">
-            <h3 class="form-signin-heading">請輸入帳號、密碼</h3>
-            <input class="form-control" type="email" name="userId" placeholder="E-mail address">
-            <input class="form-control" type="password" name="userPassword" placeholder="Password">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-        </form>-->
-        <form>
-            <p><h3>登入</h3></p>
-            <p><input type="text" name="userId" placeholder="請輸入帳號"></p>
-            <p><input type="password" name="userPassword" placeholder="請輸入密碼"></p>
-            <p><button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button></p>
-            <p><button class="btn btn-lg btn-primary btn-block" type="submit">使用Facebook帳號登入</button></p>
-            <p><button class="btn btn-lg btn-primary btn-block" type="submit">使用Google帳號登入</button></p>
-            <p>
-                <span class="pull-left"><a href="#">忘記密碼?</a></span>
-                <span class="pull-right">還不是會員？<a href="#">立即註冊</a></span>
-            </p>
-        </form>
+	<section>
+		<div id="loginContent" class="container">
+			<form>
+				<p><h3>登入</h3></p>
+				<p><input type="text" name="userId" placeholder="請輸入帳號"></p>
+				<p><input type="password" name="userPassword" placeholder="請輸入密碼"></p>
+				<p><button id="btLogin" class="btn btn-lg btn-primary btn-block" type="submit">Log in</button></p>
+				<p><button class="btn btn-lg btn-primary btn-block" type="submit">使用Facebook帳號登入</button></p>
+				<p><button class="btn btn-lg btn-primary btn-block" type="submit">使用Google帳號登入</button></p>
+				<div class="row">
+					<div id="forgot" class="col-lg-6">
+						<div class="text-left">
+							<a href="#">忘記密碼?</a>
+						</div>
+					</div>
+					<div id="create" class="col-lg-6">
+						<div class="text-right">
+							還沒有帳號？
+							<a href="#">立即註冊</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
 	</section>
 
 	<footer>

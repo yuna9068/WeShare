@@ -1,5 +1,7 @@
 #loginContent {
-  text-align: center; }
+  text-align: center;
+  height: calc(100vh - 290px);
+  margin-top: 100px; }
 
 form {
   max-width: 350px;
@@ -13,4 +15,9 @@ input {
   width: 100%;
   height: auto;
   padding: 5px;
-  font-size: large; }
+  font-size: large;
+  border-radius: 6px; }
+
+#btLogin {
+  background-color: #87CEFA;
+  border-color: #609fe3; }
