@@ -1,3 +1,8 @@
+$sectionWishColor: #ff9797;
+$sectionGiveColor: #FFC78B;
+$sectionExchangeColor: #01B468;
+$sectionTitleColor: #FFFFFF;
+
 /* sectionSlider設定 */
 
 #sectionSlider {
@@ -5,7 +10,9 @@
     padding: 0px;
 }
 
-
+.item img {
+    max-width: 100%;
+}
 /* sectionContent設定 */
 
 #sectionContent {
@@ -17,4 +24,27 @@
 
 #sectionContent div {
     border: 1px dotted #87CEFA;
+}
+/* 標題背景色 */
+#wishTitle {
+    background-color: $sectionWishColor;
+}
+
+#giveTitle {
+    background-color: $sectionGiveColor;
+}
+
+#exchangeTitle {
+    background-color: $sectionExchangeColor;
+}
+/* 標題樣式 */
+.sectionTitle{
+    margin-top: 20px;
+    a {
+        color: $sectionTitleColor;
+        font-weight: bolder;
+    }    
+    a:hover, a:focus {
+        text-decoration: none;
+    }
 }

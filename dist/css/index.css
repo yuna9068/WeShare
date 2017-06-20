@@ -4,6 +4,9 @@
   border: 1px dotted #87CEFA;
   padding: 0px; }
 
+.item img {
+  max-width: 100%; }
+
 /* sectionContent設定 */
 #sectionContent {
   border: 1px dotted #87CEFA; }
@@ -11,3 +14,22 @@
 /* sectionContent div設定 */
 #sectionContent div {
   border: 1px dotted #87CEFA; }
+
+/* 標題背景色 */
+#wishTitle {
+  background-color: #ff9797; }
+
+#giveTitle {
+  background-color: #FFC78B; }
+
+#exchangeTitle {
+  background-color: #01B468; }
+
+/* 標題樣式 */
+.sectionTitle {
+  margin-top: 20px; }
+  .sectionTitle a {
+    color: #FFFFFF;
+    font-weight: bolder; }
+  .sectionTitle a:hover, .sectionTitle a:focus {
+    text-decoration: none; }
