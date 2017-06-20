@@ -3,48 +3,122 @@ $sectionGiveColor: #FFC78B;
 $sectionExchangeColor: #01B468;
 $sectionTitleColor: #FFFFFF;
 
+/* 連結不出現底線 */
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
 /* sectionSlider設定 */
 
 #sectionSlider {
-    border: 1px dotted #87CEFA;
     padding: 0px;
 }
 
-.item img {
-    max-width: 100%;
+
+/* 幻燈片圖片尺寸 */
+
+.carouselImg {
+    width: 100%;
+    max-height: 500px;
 }
-/* sectionContent設定 */
-
-#sectionContent {
-    border: 1px dotted #87CEFA;
-}
 
 
-/* sectionContent div設定 */
+/* 標題背景色及右邊文字 */
 
-#sectionContent div {
-    border: 1px dotted #87CEFA;
-}
-/* 標題背景色 */
 #wishTitle {
     background-color: $sectionWishColor;
+    /*Safari 5.1-6*/
+    background: -webkit-linear-gradient(left, rgba(255, 151, 151, 1), rgba(255, 151, 151, 0));
+    /*Opera 11.1-12*/
+    background: -o-linear-gradient(right, rgba(255, 151, 151, 1), rgba(255, 151, 151, 0));
+    /*Fx 3.6-15*/
+    background: -moz-linear-gradient(right, rgba(255, 151, 151, 1), rgba(255, 151, 151, 0));
+    /*Standard*/
+    background: linear-gradient(to right, rgba(255, 151, 151, 1), rgba(255, 151, 151, 0));
+    small>a {
+        color: $sectionWishColor;
+        font-weight: bolder;
+    }
 }
 
 #giveTitle {
     background-color: $sectionGiveColor;
+    /*Safari 5.1-6*/
+    background: -webkit-linear-gradient(left, rgba(255, 199, 139, 1), rgba(255, 199, 139, 0));
+    /*Opera 11.1-12*/
+    background: -o-linear-gradient(right, rgba(255, 199, 139, 1), rgba(255, 199, 139, 0));
+    /*Fx 3.6-15*/
+    background: -moz-linear-gradient(right, rgba(255, 199, 139, 1), rgba(255, 199, 139, 0));
+    /*Standard*/
+    background: linear-gradient(to right, rgba(255, 199, 139, 1), rgba(255, 199, 139, 0));
+    small>a {
+        color: $sectionGiveColor;
+        font-weight: bolder;
+    }
 }
 
 #exchangeTitle {
     background-color: $sectionExchangeColor;
+    /*Safari 5.1-6*/
+    background: -webkit-linear-gradient(left, rgba(1, 180, 104, 1), rgba(1, 180, 104, 0));
+    /*Opera 11.1-12*/
+    background: -o-linear-gradient(right, rgba(1, 180, 104, 1), rgba(1, 180, 104, 0));
+    /*Fx 3.6-15*/
+    background: -moz-linear-gradient(right, rgba(1, 180, 104, 1), rgba(1, 180, 104, 0));
+    /*Standard*/
+    background: linear-gradient(to right, rgba(1, 180, 104, 1), rgba(1, 180, 104, 0));
+    small>a {
+        color: $sectionExchangeColor;
+        font-weight: bolder;
+    }
 }
-/* 標題樣式 */
-.sectionTitle{
+
+
+/* 標題樣式及左邊文字 */
+
+.sectionTitle {
     margin-top: 20px;
-    a {
+    margin-bottom: 10px;
+    span>a {
         color: $sectionTitleColor;
         font-weight: bolder;
-    }    
-    a:hover, a:focus {
-        text-decoration: none;
     }
+}
+
+
+/* 滑鼠移至物資 */
+
+.wishItem:hover {
+    outline: $sectionWishColor dotted medium;
+}
+
+.giveItem:hover {
+    outline: $sectionGiveColor dotted medium;
+}
+
+.exchangeItem:hover {
+    outline: $sectionExchangeColor dotted medium;
+}
+
+
+/* 物資文字樣式 */
+
+.itemContent {
+    text-align: center;
+}
+
+.itemGroup {
+    font-size: medium;
+}
+
+.itemName {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.itemText {
+    font-size: large;
 }

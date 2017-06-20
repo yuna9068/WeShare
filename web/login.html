@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WeShare 微分享</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="../dist/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+			<![endif]-->
+
+	<!-- 個人化 -->
+	<link rel="stylesheet" type="text/css" href="../dist/css/header.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/login.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/footer.css">
+</head>
+
+<body>
+	<header>
+		<nav id="navLayout" class="navbar-default navbar-fixed-top">
+			<div id="navLeft" class="navbar-header">
+				<!-- 手機選單 -->
+				<button type="button" id="navButton" class="navbar-toggle" data-toggle="collapse" data-target="#navMenu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<!-- Logo -->
+				<a href="#" id="navLogo" class="navbar-brand">
+					<img src="../dist/img/WeShare_logo.png" width="60" alt="WeShare">
+				</a>
+			</div>
+
+			<div id="navMenu" class="collapse navbar-collapse">
+				<!-- 左選單 -->
+				<ul id="navMenuLeft" class="nav navbar-nav">
+					<li>
+						<a href="#" id="navWish">
+							<span>許願池</span>
+							<span></span>
+						</a>
+					</li>
+					<li>
+						<a href="#" id="navGive">
+							<span>送愛心</span>
+							<span></span>
+						</a>
+					</li>
+					<li>
+						<a href="#" id="navExchange">
+							<span>以物易物</span>
+							<span></span>
+						</a>
+					</li>
+					<li>
+						<a href="#" id="navGroup">
+							<span>社福團體</span>
+							<span></span>
+						</a>
+					</li>
+				</ul>
+
+				<!-- 右選單-->
+				<ul id="navMenuRight" class="nav navbar-nav navbar-right">
+					<li class="beforeLogin">
+						<a href="#" id="navLogin">
+							<span>登入 / 註冊</span>
+							<span></span>
+						</a>
+					</li>
+					<li class="afterLogin dropdown">
+						<a href="#" id="navMember" class="dropdown-toggle" data-toggle="dropdown">
+							<span>會員姓名</span>
+							<span></span>
+						</a>
+						<ul id="navMemberSub" class="dropdown-menu">
+							<li><a href="#">個人檔案</a></li>
+							<li><a href="#">評價</a></li>
+							<li><a href="#">物資箱</a></li>
+							<li><a href="#">站內信</a></li>
+						</ul>
+					</li>
+					<li class="afterLogin">
+						<a href="#" id="navMemberImg">
+							<img src="../dist/img/icon_member1.png" width="40" alt="MemberImg">
+							<!--Icons made by Freepik from Flaticon(http://www.freepik.com)-->
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" id="navLanguage" class="dropdown-toggle" data-toggle="dropdown">
+							<span>語言</span>
+							<span></span>
+						</a>
+						<ul id="navLanguageSub" class="dropdown-menu">
+							<li><a href="#">繁體中文</a></li>
+							<li><a href="#">English</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" id="navFBImg">
+							<img src="../dist/img/icon_facebook.png" width="40" alt="FBImg">
+							<!--Icons made by Freepik from Flaticon(http://www.freepik.com)-->
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<section id="loginContent" class="container">
+        <!--<form class="form-signin">
+            <h3 class="form-signin-heading">請輸入帳號、密碼</h3>
+            <input class="form-control" type="email" name="userId" placeholder="E-mail address">
+            <input class="form-control" type="password" name="userPassword" placeholder="Password">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+        </form>-->
+        <form>
+            <p><h3>登入</h3></p>
+            <p><input type="text" name="userId" placeholder="請輸入帳號"></p>
+            <p><input type="password" name="userPassword" placeholder="請輸入密碼"></p>
+            <p><button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button></p>
+            <p><button class="btn btn-lg btn-primary btn-block" type="submit">使用Facebook帳號登入</button></p>
+            <p><button class="btn btn-lg btn-primary btn-block" type="submit">使用Google帳號登入</button></p>
+            <p>
+                <span class="pull-left"><a href="#">忘記密碼?</a></span>
+                <span class="pull-right">還不是會員？<a href="#">立即註冊</a></span>
+            </p>
+        </form>
+	</section>
+
+	<footer>
+		<div class="footerContent">
+			<a href="#">關於我們</a>
+			<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+			<a href="#">聯絡我們</a>
+			<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+			<a href="#">服務條款</a>
+			<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+			<a href="#">隱私權政策</a>
+			<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+			<a href="#">常見問題</a>
+		</div>
+		<div class="footerContent">All Content Copyright © 2017 WeShare, Inc.</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="../dist/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="../dist/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- 個人化 -->
+	<script src="../dist/js/bundle.js"></script>
+</body>
+
+</html>

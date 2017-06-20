@@ -1,35 +1,89 @@
 @charset "UTF-8";
+/* 連結不出現底線 */
+a:hover,
+a:focus {
+  text-decoration: none; }
+
 /* sectionSlider設定 */
 #sectionSlider {
-  border: 1px dotted #87CEFA;
   padding: 0px; }
 
-.item img {
-  max-width: 100%; }
+/* 幻燈片圖片尺寸 */
+.carouselImg {
+  width: 100%;
+  max-height: 500px; }
 
-/* sectionContent設定 */
-#sectionContent {
-  border: 1px dotted #87CEFA; }
-
-/* sectionContent div設定 */
-#sectionContent div {
-  border: 1px dotted #87CEFA; }
-
-/* 標題背景色 */
+/* 標題背景色及右邊文字 */
 #wishTitle {
-  background-color: #ff9797; }
+  background-color: #ff9797;
+  /*Safari 5.1-6*/
+  background: -webkit-linear-gradient(left, #ff9797, rgba(255, 151, 151, 0));
+  /*Opera 11.1-12*/
+  background: -o-linear-gradient(right, #ff9797, rgba(255, 151, 151, 0));
+  /*Fx 3.6-15*/
+  background: -moz-linear-gradient(right, #ff9797, rgba(255, 151, 151, 0));
+  /*Standard*/
+  background: linear-gradient(to right, #ff9797, rgba(255, 151, 151, 0)); }
+  #wishTitle small > a {
+    color: #ff9797;
+    font-weight: bolder; }
 
 #giveTitle {
-  background-color: #FFC78B; }
+  background-color: #FFC78B;
+  /*Safari 5.1-6*/
+  background: -webkit-linear-gradient(left, #ffc78b, rgba(255, 199, 139, 0));
+  /*Opera 11.1-12*/
+  background: -o-linear-gradient(right, #ffc78b, rgba(255, 199, 139, 0));
+  /*Fx 3.6-15*/
+  background: -moz-linear-gradient(right, #ffc78b, rgba(255, 199, 139, 0));
+  /*Standard*/
+  background: linear-gradient(to right, #ffc78b, rgba(255, 199, 139, 0)); }
+  #giveTitle small > a {
+    color: #FFC78B;
+    font-weight: bolder; }
 
 #exchangeTitle {
-  background-color: #01B468; }
+  background-color: #01B468;
+  /*Safari 5.1-6*/
+  background: -webkit-linear-gradient(left, #01b468, rgba(1, 180, 104, 0));
+  /*Opera 11.1-12*/
+  background: -o-linear-gradient(right, #01b468, rgba(1, 180, 104, 0));
+  /*Fx 3.6-15*/
+  background: -moz-linear-gradient(right, #01b468, rgba(1, 180, 104, 0));
+  /*Standard*/
+  background: linear-gradient(to right, #01b468, rgba(1, 180, 104, 0)); }
+  #exchangeTitle small > a {
+    color: #01B468;
+    font-weight: bolder; }
 
-/* 標題樣式 */
+/* 標題樣式及左邊文字 */
 .sectionTitle {
-  margin-top: 20px; }
-  .sectionTitle a {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+  .sectionTitle span > a {
     color: #FFFFFF;
     font-weight: bolder; }
-  .sectionTitle a:hover, .sectionTitle a:focus {
-    text-decoration: none; }
+
+/* 滑鼠移至物資 */
+.wishItem:hover {
+  outline: #ff9797 dotted medium; }
+
+.giveItem:hover {
+  outline: #FFC78B dotted medium; }
+
+.exchangeItem:hover {
+  outline: #01B468 dotted medium; }
+
+/* 物資文字樣式 */
+.itemContent {
+  text-align: center; }
+
+.itemGroup {
+  font-size: medium; }
+
+.itemName {
+  font-size: x-large;
+  font-weight: bold; }
+
+.itemText {
+  font-size: large; }

@@ -1,0 +1,16 @@
+#loginContent {
+  text-align: center; }
+
+form {
+  max-width: 350px;
+  text-align: center;
+  margin: 20px auto; }
+
+p {
+  margin: 15px auto; }
+
+input {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  font-size: large; }
