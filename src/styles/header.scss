@@ -1,10 +1,10 @@
 $navWishColor: #ff9797;
-$navGiveColor: #FFC78B;
+$navGiveColor: #ef7b00;
 $navExchangeColor: #01B468;
-$navGroupColor: #FFD306;
-$navMemberColor: #87CEFA;
+$navGroupColor: #ffc107;
+$navMemberColor: #3381b1;
 $navLanguageColor: #AB82FF;
-
+$navFBColor: #6161fd;
 
 /* 內容跟頂端的距離 */
 body {
@@ -137,6 +137,11 @@ body {
 
 #navLanguage span:nth-child(2) {
     background-color: $navLanguageColor;
+}
+
+#navFBImg {
+    font-size: 30px;
+    color: $navFBColor;
 }
 
 

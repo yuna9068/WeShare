@@ -47,10 +47,10 @@ body {
 
 /* 導覽列-送愛心顏色 */
 #navGive span:nth-child(1) {
-  color: #FFC78B; }
+  color: #ef7b00; }
 
 #navGive span:nth-child(2) {
-  background-color: #FFC78B; }
+  background-color: #ef7b00; }
 
 /* 導覽列-以物易物顏色 */
 #navExchange span:nth-child(1) {
@@ -61,24 +61,24 @@ body {
 
 /* 導覽列-社福團體顏色 */
 #navGroup span:nth-child(1) {
-  color: #FFD306; }
+  color: #ffc107; }
 
 #navGroup span:nth-child(2) {
-  background-color: #FFD306; }
+  background-color: #ffc107; }
 
 /* 導覽列-登入 / 註冊顏色 */
 #navLogin span:nth-child(1) {
-  color: #87CEFA; }
+  color: #3381b1; }
 
 #navLogin span:nth-child(2) {
-  background-color: #87CEFA; }
+  background-color: #3381b1; }
 
 /* 導覽列-會員姓名顏色 */
 #navMember span:nth-child(1) {
-  color: #87CEFA; }
+  color: #3381b1; }
 
 #navMember span:nth-child(2) {
-  background-color: #87CEFA; }
+  background-color: #3381b1; }
 
 /* 導覽列-語言顏色 */
 #navLanguage span:nth-child(1) {
@@ -86,6 +86,10 @@ body {
 
 #navLanguage span:nth-child(2) {
   background-color: #AB82FF; }
+
+#navFBImg {
+  font-size: 30px;
+  color: #6161fd; }
 
 /* 導覽列-選單樣式 */
 #navMenu span:nth-child(1) {
@@ -145,10 +149,10 @@ body {
     transform: skewX(-16deg); }
 
 #navMemberSub li a {
-  color: #87CEFA; }
+  color: #3381b1; }
   #navMemberSub li a:hover {
     color: #ffffff;
-    background-color: #87CEFA;
+    background-color: #3381b1;
     transform: skewX(0deg);
     transition: .3s; }
 
