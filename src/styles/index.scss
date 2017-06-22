@@ -96,7 +96,7 @@ a:focus {
 		font-size: 20px;
 		line-height: 40px;
 	}
-	&:nth-child(1){
+	&:nth-child(1) {
 		margin-top: 30px;
 	}
 }
@@ -131,28 +131,25 @@ a:focus {
 	color: $sectionTitleColor;
 }
 
-// .wishItem:hover {
-// 	outline: $sectionWishColor dotted medium;
-// }
 
 /* 物資文字樣式 */
 
 .itemContent {
-	text-align: center;	
+	text-align: center;
 	letter-spacing: 2px;
 	margin-top: 5px;
 }
 
 .itemBy {
 	font-size: medium;
-	a{
+	a {
 		color: darken(gray, 10%);
 	}
 }
 
 .itemName {
 	font-size: large;
-	a{
-		color:#3E3E3E;
+	a {
+		color: #3E3E3E;
 	}
 }
