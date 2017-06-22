@@ -1,8 +1,17 @@
+$bodyBg: #f8fbf9;
+
 $sectionWishColor: #ff9797;
-$sectionGiveColor: #FFC78B;
-$sectionExchangeColor: #01B468;
+$sectionGiveColor: #ffaf5a;
+$sectionExchangeColor: #06c574;
+
 $sectionTitleColor: #FFFFFF;
 $sectionOverlayColor: rgba(0, 0, 0, 0.5);
+
+$wishItem: #f8f7f7;
+
+$itemByText: #543939;
+$itemByTextMonth: #01B468;
+$itemNameText: #888888;
 
 /* 連結不出現底線 */
 
@@ -11,93 +20,119 @@ a:focus {
 	text-decoration: none;
 }
 
+body {
+	background-color: $bodyBg;
+}
+
+@media (min-width: 1300px) {
+	.container {
+		width: 1500px;
+	}
+}
+
 
 /* sectionSlider設定 */
 
 #sectionSlider {
-	padding: 0px;
+	margin-top: 30px;
 }
 
 
 /* 幻燈片圖片尺寸 */
 
-.carouselImg {
-	width: 100%;
-	max-height: 500px;
+.carousel-control.left {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0001) 100%);
+	.glyphicon.glyphicon-chevron-left {
+		text-shadow: 2px 4px #46463d;
+	}
+}
+
+.carousel-control.right {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .0001) 100%);
+	.glyphicon.glyphicon-chevron-right {
+		text-shadow: -2px 4px #46463d;
+	}
 }
 
 
 /* 標題背景色及右邊文字樣式 */
 
 #wishTitle {
-	background-color: $sectionWishColor;
-	/*Safari 5.1-6*/
-	background: -webkit-linear-gradient(left, rgba(255, 151, 151, 1) 40%, rgba(255, 151, 151, 0) 100%);
-	/*Opera 11.1-12*/
-	background: -o-linear-gradient(right, rgba(255, 151, 151, 1) 40%, rgba(255, 151, 151, 0) 100%);
-	/*Fx 3.6-15*/
-	background: -moz-linear-gradient(right, rgba(255, 151, 151, 1) 40%, rgba(255, 151, 151, 0) 100%);
-	/*Standard*/
-	background: linear-gradient(to right, rgba(255, 151, 151, 1) 40%, rgba(255, 151, 151, 0) 100%);
+	border: 1px solid darken($sectionWishColor, 10%);
+	background-color: lighten($sectionWishColor, 50%) ;
+	.titleLeft {
+		color: darken($sectionWishColor, 20%);
+	}
 	.titleRight {
 		color: $sectionWishColor;
-		font-weight: bolder;
-		font-size: 16px;
-		line-height: 40px;
 	}
 }
 
 #giveTitle {
-	background-color: $sectionGiveColor;
+	border: 1px solid darken($sectionGiveColor, 10%);
+	background-color: lighten($sectionGiveColor, 50%);
 	/*Safari 5.1-6*/
-	background: -webkit-linear-gradient(left, rgba(255, 199, 139, 1) 40%, rgba(255, 199, 139, 0) 100%);
+	// background: -webkit-linear-gradient(left, rgba(255, 199, 139, 1) 40%, rgba(255, 199, 139, 0) 100%);
 	/*Opera 11.1-12*/
-	background: -o-linear-gradient(right, rgba(255, 199, 139, 1) 40%, rgba(255, 199, 139, 0) 100%);
+	// background: -o-linear-gradient(right, rgba(255, 199, 139, 1) 40%, rgba(255, 199, 139, 0) 100%);
 	/*Fx 3.6-15*/
-	background: -moz-linear-gradient(right, rgba(255, 199, 139, 1) 40%, rgba(255, 199, 139, 0) 100%);
+	// background: -moz-linear-gradient(right, rgba(255, 199, 139, 1) 40%, rgba(255, 199, 139, 0) 100%);
 	/*Standard*/
-	background: linear-gradient(to right, rgba(255, 199, 139, 1) 40%, rgba(255, 199, 139, 0) 100%);
+	// background: linear-gradient(to right, rgba(255, 199, 139, 1) 40%, rgba(255, 199, 139, 0) 100%);
+	.titleLeft {
+		color:  darken($sectionGiveColor, 20%);
+	}
 	.titleRight {
 		color: $sectionGiveColor;
-		font-weight: bolder;
-		font-size: 16px;
-		line-height: 40px;
 	}
 }
 
 #exchangeTitle {
-	background-color: $sectionExchangeColor;
+	border: 1px solid darken($sectionExchangeColor, 10%);
+	background-color: lighten($sectionExchangeColor, 50%);
 	/*Safari 5.1-6*/
-	background: -webkit-linear-gradient(left, rgba(1, 180, 104, 1) 40%, rgba(1, 180, 104, 0) 100%);
+	// background: -webkit-linear-gradient(left, rgba(1, 180, 104, 1) 40%, rgba(1, 180, 104, 0) 100%);
 	/*Opera 11.1-12*/
-	background: -o-linear-gradient(right, rgba(1, 180, 104, 1) 40%, rgba(1, 180, 104, 0) 100%);
+	// background: -o-linear-gradient(right, rgba(1, 180, 104, 1) 40%, rgba(1, 180, 104, 0) 100%);
 	/*Fx 3.6-15*/
-	background: -moz-linear-gradient(right, rgba(1, 180, 104, 1) 40%, rgba(1, 180, 104, 0) 100%);
+	// background: -moz-linear-gradient(right, rgba(1, 180, 104, 1) 40%, rgba(1, 180, 104, 0) 100%);
 	/*Standard*/
-	background: linear-gradient(to right, rgba(1, 180, 104, 1) 40%, rgba(1, 180, 104, 0) 100%);
+	// background: linear-gradient(to right, rgba(1, 180, 104, 1) 40%, rgba(1, 180, 104, 0) 100%);
+	.titleLeft {
+		color: darken($sectionExchangeColor, 20%);
+	}
 	.titleRight {
 		color: $sectionExchangeColor;
-		font-weight: bolder;
-		font-size: 16px;
-		line-height: 40px;
 	}
+}
+
+
+/* 物資區塊背景色及右邊文字樣式 */
+
+#wishContent,
+#giveContent,
+#exchangeContent {
+	margin-bottom: 200px;
 }
 
 
 /* 標題及左邊文字樣式 */
 
 .sectionTitle {
-	margin-top: 60px;
-	margin-bottom: 10px;
-	border-radius: 12px;
+	margin: 60px 0 60px 0;
+	border-radius: 5px;
 	.titleLeft {
-		color: $sectionTitleColor;
 		font-weight: bolder;
 		font-size: 20px;
 		line-height: 40px;
+		.titleLeftText {
+			padding-left: 15px;
+		}
 	}
-	&:nth-child(1) {
-		margin-top: 30px;
+	.titleRight {
+		font-weight: bolder;
+		font-size: 16px;
+		line-height: 40px;
 	}
 }
 
@@ -107,6 +142,8 @@ a:focus {
 .itemA {
 	position: relative;
 	display: block;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 .itemA:hover .itemOverlay {
@@ -114,42 +151,55 @@ a:focus {
 }
 
 .itemOverlay {
-	width: 100%;
-	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 30px;
 	opacity: 0;
-	border-radius: 50px;
+	border-radius: 5px;
 	background-color: $sectionOverlayColor;
 	transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
-	line-height: 100px;
-	text-align: center;
-	font-size: 20px;
-	font-weight: bolder;
-	letter-spacing: 5px;
 	color: $sectionTitleColor;
 }
 
+// .wishItem:hover {
+// 	outline: $sectionWishColor dotted medium;
+// }
 
 /* 物資文字樣式 */
 
-.itemContent {
-	text-align: center;
-	letter-spacing: 2px;
-	margin-top: 5px;
-}
-
-.itemBy {
-	font-size: medium;
-	a {
-		color: darken(gray, 10%);
+.wishItem,
+.giveItem,
+.exchangeItem {
+	background-color: $wishItem;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.11);
+	.itemContent {
+		letter-spacing: 2px;
+		margin-top: 5px;
+		margin-top: 5px;
+		padding-bottom: 15px;
 	}
-}
-
-.itemName {
-	font-size: large;
-	a {
-		color: #3E3E3E;
+	.itemBy {
+		font-size: 13px;
+		padding: 15px 15px 15px 15px;
+		a {
+			color: $itemByText;
+		}
+	}
+	.itemName {
+		font-size: 17px;
+		padding: 15px 15px 40px 15px;
+		a {
+			color: $itemNameText;
+			h6 span {
+				color: $itemByTextMonth;
+			}
+			h5 span {
+				color: darken($itemNameText, 100%);
+			}
+		}
 	}
 }
