@@ -107,7 +107,8 @@
 					</li>
 					<li>
 						<a href="#" id="navFBImg">
-							<img src="../dist/img/icon_facebook.png" width="40" alt="FBImg">
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							<!--<img src="../dist/img/icon_facebook.png" width="40" alt="FBImg">-->
 							<!--Icons made by Freepik from Flaticon(http://www.freepik.com)-->
 						</a>
 					</li>
@@ -118,10 +119,10 @@
 
 	<section>
 		<div id="loginContent" class="container">
-			<form id="formLogin" action="servlet" method="post" name="loginForm">
+			<form id="formLogin" action="server" method="post" name="loginForm">
 				<p><h3>登入</h3></p>
-				<p><input type="text" name="dbfield" placeholder="請輸入帳號"></p>
-				<p><input type="password" name="dbfield" placeholder="請輸入密碼"></p>
+				<p><input type="text" name="server" placeholder="請輸入帳號"></p>
+				<p><input type="password" name="server" placeholder="請輸入密碼"></p>
 				<p><button id="btLogin" class="btn btn-lg btn-primary btn-block" type="submit">Log in</button></p>
 				<p><button class="btn btn-lg btn-primary btn-block" type="submit">使用Facebook帳號登入</button></p>
 				<p><button class="btn btn-lg btn-primary btn-block" type="submit">使用Google帳號登入</button></p>

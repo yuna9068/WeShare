@@ -107,7 +107,8 @@
 					</li>
 					<li>
 						<a href="#" id="navFBImg">
-							<img src="../dist/img/icon_facebook.png" width="40" alt="FBImg">
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							<!--<img src="../dist/img/icon_facebook.png" width="40" alt="FBImg">-->
 							<!--Icons made by Freepik from Flaticon(http://www.freepik.com)-->
 						</a>
 					</li>
@@ -123,27 +124,247 @@
 					<div class="row">
 						<!--左邊搜尋列-->
 						<div id="sectionSearch" class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<!--關鍵字搜尋-->
+							<!--關鍵字搜尋區塊-->
 							<div>
 								<!--關鍵字搜尋標題-->
-								<button type="button" class="btn btn-default in btSearch" data-toggle="collapse" data-target="#c1">
+								<button type="button" class="btn btn-primary btn-block in btSearch" data-toggle="collapse" data-target="#blockKWSearch">
 									<span>關鍵字</span>
 									<span class="caret caretRotate"></span>
 								</button>
 								<!--關鍵字搜尋框-->
-								<div id="c1" class="collapse in">
-									<input type="search" placeholder="請輸入關鍵字">
-									<button id="btKWSearch" type="submit">搜尋</button>
+								<div id="blockKWSearch" class="collapse in">
+									<input type="search" class="form-control" placeholder="請輸入關鍵字">
+									<button id="btKWSearch" type="submit" class="btn btn-large btn-block btn-info">搜尋</button>
+								</div>
+							</div>
+
+							<!--需求者身份區塊-->
+							<div>
+								<!--需求者身份標題-->
+								<button type="button" class="btn btn-primary btn-block in btSearch" data-toggle="collapse" data-target="#blockBy">
+									<span>需求者身份</span>
+									<span class="caret caretRotate"></span>
+								</button>
+								<!--需求者身份選項-->
+								<div id="blockBy" class="collapse in">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											社福團體
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											個人
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<!--物資類別區塊-->
+							<div>
+								<!--物資類別標題-->
+								<button type="button" class="btn btn-primary btn-block in btSearch" data-toggle="collapse" data-target="#blockClass">
+									<span>物資類別</span>
+									<span class="caret caretRotate"></span>
+								</button>
+								<!--物資類別選項-->
+								<div id="blockClass" class="collapse in">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											食
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											衣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											住
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											其他
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<!--物資需求地區塊-->
+							<div>
+								<!--物資需求地標題-->
+								<button type="button" class="btn btn-primary btn-block in btSearch" data-toggle="collapse" data-target="#blockLoc">
+									<span>物資需求地</span>
+									<span class="caret caretRotate"></span>
+								</button>
+								<!--物資需求地選項-->
+								<div id="blockLoc" class="collapse in">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											基隆市
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											臺北市
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											新北市
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											桃園市
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											新竹市
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											新竹縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											苗栗縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											臺中市
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											南投縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											彰化縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											雲林縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											嘉義市
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											嘉義縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											臺南市
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											高雄市
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											屏東縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											臺東縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											花蓮縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											宜蘭縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											澎湖縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											金門縣
+										</label>
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" value="server">
+											連江縣
+										</label>
+									</div>
 								</div>
 							</div>
 						</div>
+
+
 						<!--右邊物資列-->
 						<div id="sectionGoods" class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
 
 							<!--右邊物資第一列-->
-							<div id="divGoods1" class="row">
+							<div id="divWishGoods1" class="row">
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-
+									<div class="wishGoods">
+										<div>
+											<a href="#" class="wishGoodsA">
+												<img class="img-responsive" src="../dist/img/WeShare_logo.png">
+												<div class="wishGoodsOverlay">
+													<div class="wishGoodsBy wishGoodsContent"><a href="#">Lepa Vida</a></div>
+													<div class="wishGoodsName wishGoodsContent">
+														<h6>By <span class="month">Matter</span> Of Mind from France</h6>														
+													</div>
+													<h4 class="text-center">詳細說明</h4>
+													<p>Labore aliqua ex amet mollit mollit culpa Lorem cillum magna ea cupidatat ea.Labore aliqua ex amet mollit mollit culpa Lorem cillum magna ea cupidatat ea.</p>
+												</div>
+											</a>
+										</div>
+									</div>
 								</div>
 								<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 
