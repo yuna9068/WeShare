@@ -162,11 +162,9 @@ body {
 	background-color: $sectionOverlayColor;
 	transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
 	color: $sectionTitleColor;
+	font-size: medium;
 }
 
-// .wishItem:hover {
-// 	outline: $sectionWishColor dotted medium;
-// }
 
 /* 物資文字樣式 */
 

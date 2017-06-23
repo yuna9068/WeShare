@@ -1,2 +1,49 @@
-#sectionWish div {
-  border: 1px dotted #87CEFA; }
+@charset "UTF-8";
+#sectionWish {
+  margin-top: 30px; }
+  #sectionWish div {
+    border: 1px dotted #87CEFA; }
+
+/* 滑鼠移至物資 */
+.wishGoodsA {
+  position: relative;
+  display: block;
+  border-radius: 5px;
+  overflow: hidden; }
+  .wishGoodsA img {
+    min-height: 210px; }
+
+.wishGoodsA:hover .wishGoodsOverlay {
+  opacity: 0.9; }
+
+.wishGoodsOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  opacity: 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+  color: #FFFFFF; }
+
+/* 物資文字樣式 */
+.wishGoods {
+  background-color: #f8f7f7;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.11); }
+  .wishGoods .wishGoodsContent {
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .wishGoods .wishGoodsBy {
+    font-size: 13px;
+    padding-left: 10px; }
+  .wishGoods .wishGoodsName {
+    font-size: 16px;
+    padding-left: 10px; }
+  .wishGoods .wishGoodsDesc {
+    font-size: 15px;
+    padding-left: 10px; }

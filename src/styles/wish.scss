@@ -1,9 +1,70 @@
-#sectionWish div {
-    border: 1px dotted #87CEFA;
+$sectionOverlayColor: rgba(0, 0, 0, 0.5);
+$sectionTitleColor: #FFFFFF;
+$wishGoods: #f8f7f7;
+$wishGoodsByText: #543939;
+$wishGoodsByTextMonth: #01B468;
+$wishGoodsNameText: #888888;
+
+#sectionWish {
+    margin-top: 30px;
+    div {
+        border: 1px dotted #87CEFA;
+    }
 }
 
-// .btSearch:focus {
-//     .caret.caretRotate {
-//         transform: rotate(180deg);
-//     }
-// }
+
+/* 滑鼠移至物資 */
+
+.wishGoodsA {
+	position: relative;
+	display: block;
+	border-radius: 5px;
+	overflow: hidden;
+    img {
+        min-height: 210px;
+    }
+}
+
+.wishGoodsA:hover .wishGoodsOverlay {
+	opacity: 0.9;
+}
+
+.wishGoodsOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	opacity: 0;
+	border-radius: 5px;
+	background-color: $sectionOverlayColor;
+	transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+	color: $sectionTitleColor;
+}
+
+/* 物資文字樣式 */
+
+.wishGoods {
+	background-color: $wishGoods;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.11);
+	.wishGoodsContent {
+		letter-spacing: 2px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		// padding-bottom: 15px;
+	}
+	.wishGoodsBy {
+		font-size: 13px;
+		padding-left: 10px;
+	}
+	.wishGoodsName {
+		font-size: 16px;
+		padding-left: 10px;
+	}
+    .wishGoodsDesc {
+		font-size: 15px;
+		padding-left: 10px;
+	}
+}
