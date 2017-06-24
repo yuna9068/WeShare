@@ -19,6 +19,13 @@
 	<link rel="stylesheet" type="text/css" href="../dist/css/login.css">
 	<link rel="stylesheet" type="text/css" href="../dist/css/footer.css">
 
+	<!-- 登入參數 -->
+	<script>
+		var loginOk = "${LoginOK}";
+		var indname = "${LoginOK.indname}";
+		var indid = "${LoginOK.indid}";
+	</script>
+
 	<!-- jQuery -->
 	<script src="../dist/bower_components/jquery/dist/jquery.min.js"></script>
 	<!-- Bootstrap JavaScript -->
@@ -27,6 +34,16 @@
 	<script src="//cdn.jsdelivr.net/holder/2.9.4/holder.min.js"></script>
 	<!-- 個人化 -->
 	<script src="../dist/js/bundle.js"></script>
+	<script src="../dist/js/login.js"></script>
+
+	<!-- Google Login -->
+	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+	<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+	<script src="../dist/js/platform.js" async defer></script>
+	<script src="https://mail.google.com/mail/u/0/?logout&hl=en"></script>
+	<meta name="google-signin-client_id" content="${abc.getGoogleClientId()}">
+	<meta name="google-signin-scope" content="profile email">
+	<!--<jsp:useBean id="abc" class="web._00_init.GlobalService" scope="application" />-->
 </head>
 
 <body>
