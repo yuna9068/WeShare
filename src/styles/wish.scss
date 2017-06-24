@@ -7,11 +7,39 @@ $wishGoodsNameText: #888888;
 
 #sectionWish {
     margin-top: 30px;
-    div {
-        border: 1px dotted #87CEFA;
-    }
+	font-size: 18px;
 }
 
+
+/* 條件標題樣式 */
+
+.btFilterTitle {
+	font-size: 18px;
+}
+
+
+/* 條件選項樣式 */
+.btFilterBlock>ul{
+	padding: 5px;
+	margin: 5px;
+	>li {
+		display: inline-block;
+		width: 44%;
+		margin: 5px;
+	}
+}
+
+.btnFilterType {
+	background-color: #87CEFA;
+	width: 100%;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+/* 搜尋鈕樣式*/
+#btKWSearch {
+	margin-bottom: 10px;
+}
 
 /* 滑鼠移至物資 */
 
@@ -52,15 +80,13 @@ $wishGoodsNameText: #888888;
 	.wishGoodsContent {
 		letter-spacing: 2px;
 		margin-top: 5px;
-		margin-bottom: 5px;
-		// padding-bottom: 15px;
-	}
-	.wishGoodsBy {
-		font-size: 13px;
-		padding-left: 10px;
 	}
 	.wishGoodsName {
 		font-size: 16px;
+		padding-left: 10px;
+	}
+	.wishGoodsBy {
+		font-size: 13px;
 		padding-left: 10px;
 	}
     .wishGoodsDesc {

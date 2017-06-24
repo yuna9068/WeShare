@@ -32,11 +32,7 @@ body {
 
 #giveTitle {
   border: 1px solid #ff9627;
-  background-color: white;
-  /*Safari 5.1-6*/
-  /*Opera 11.1-12*/
-  /*Fx 3.6-15*/
-  /*Standard*/ }
+  background-color: white; }
   #giveTitle .titleLeft {
     color: #f37d00; }
   #giveTitle .titleRight {
@@ -44,11 +40,7 @@ body {
 
 #exchangeTitle {
   border: 1px solid #049457;
-  background-color: #cdfde9;
-  /*Safari 5.1-6*/
-  /*Opera 11.1-12*/
-  /*Fx 3.6-15*/
-  /*Standard*/ }
+  background-color: #cdfde9; }
   #exchangeTitle .titleLeft {
     color: #03623a; }
   #exchangeTitle .titleRight {
@@ -65,14 +57,12 @@ body {
   margin: 60px 0 60px 0;
   border-radius: 5px; }
   .sectionTitle .titleLeft {
-    font-weight: bolder;
-    font-size: 20px;
+    font-size: 23px;
     line-height: 40px; }
     .sectionTitle .titleLeft .titleLeftText {
       padding-left: 15px; }
   .sectionTitle .titleRight {
-    font-weight: bolder;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 40px; }
 
 /* 滑鼠移至物資 */
@@ -113,15 +103,6 @@ body {
     margin-top: 5px;
     margin-top: 5px;
     padding-bottom: 15px; }
-  .wishItem .itemBy,
-  .giveItem .itemBy,
-  .exchangeItem .itemBy {
-    font-size: 13px;
-    padding: 15px 15px 15px 15px; }
-    .wishItem .itemBy a,
-    .giveItem .itemBy a,
-    .exchangeItem .itemBy a {
-      color: #543939; }
   .wishItem .itemName,
   .giveItem .itemName,
   .exchangeItem .itemName {
@@ -139,3 +120,12 @@ body {
       .giveItem .itemName a h5 span,
       .exchangeItem .itemName a h5 span {
         color: black; }
+  .wishItem .itemBy,
+  .giveItem .itemBy,
+  .exchangeItem .itemBy {
+    font-size: 13px;
+    padding: 15px 15px 15px 15px; }
+    .wishItem .itemBy a,
+    .giveItem .itemBy a,
+    .exchangeItem .itemBy a {
+      color: #543939; }

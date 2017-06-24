@@ -7,6 +7,13 @@ $navLanguageColor: #AB82FF;
 $navFBColor: #6161fd;
 
 
+/* 加入Google font字型(圓體) */
+@font-face{
+    font-family: yen;
+    src: url(../font/cwTeXYen-zhonly.ttf);
+}
+
+
 /* 連結不出現底線&出現手的符號 */
 
 a:hover,
@@ -16,9 +23,10 @@ a:focus {
 }
 
 
-/* 內容跟頂端的距離 */
+/* 內容跟頂端的距離及網站字體 */
 body {
     padding-top: 80px;
+    font-family: yen, serif;
 }
 
 @media screen and (min-width: 768px) and (max-width:984px) {
@@ -54,7 +62,7 @@ body {
 
 #navLayout {
     background-color: #ffffff;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 /* 導覽列左右內縮40px */
@@ -159,7 +167,6 @@ body {
 
 #navMenu span:nth-child(1) {
     position: relative;
-    font-weight: bolder;
     transition: 1s;
 }
 
