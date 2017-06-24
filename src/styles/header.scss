@@ -35,10 +35,11 @@ body {
 	}
 }
 
-/* 手機選單鈕垂直位置 */
+/* 手機選單鈕位置 */
 
 #navButton {
-	margin-top: 15px;
+	margin-top: 23px;
+	margin-right: 15px;
 }
 
 
@@ -51,10 +52,14 @@ body {
 }
 
 
-/* Logo區的高度*/
+/* Logo區的高度及圖片尺寸 */
 
 #navLogo {
-	height: 60px;
+	height: 80px;
+	padding-top: 10px;
+	>img {
+		height: 60px;
+	}
 }
 
 

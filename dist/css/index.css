@@ -2,10 +2,6 @@
 body {
   background-color: #f8fbf9; }
 
-@media (min-width: 1300px) {
-  .container {
-    width: 1500px; } }
-
 /* sectionSlider設定 */
 #sectionSlider {
   margin-top: 30px; }
@@ -21,7 +17,12 @@ body {
   .carousel-control.right .glyphicon.glyphicon-chevron-right {
     text-shadow: -2px 4px #46463d; }
 
-/* 標題背景色及右邊文字樣式 */
+/* 物資內容寬度 */
+@media screen and (min-width: 1500px) {
+  #sectionContent {
+    width: 1300px; } }
+
+/* 標題背景色及文字樣式 */
 #wishTitle {
   border: 1px solid #ff6464;
   background-color: #fff8f8; }
@@ -46,15 +47,13 @@ body {
   #exchangeTitle .titleRight {
     color: #06c574; }
 
-/* 物資區塊背景色及右邊文字樣式 */
+/* 物資清單樣式 */
 #wishContent,
-#giveContent {
-  margin-bottom: 200px; }
-
+#giveContent,
 #exchangeContent {
-  margin-bottom: 200px; }
+  margin-bottom: 100px; }
 
-/* 標題及左邊文字樣式 */
+/* 標題及文字樣式 */
 .sectionTitle {
   margin: 60px 0 60px 0;
   border-radius: 5px; }
@@ -91,13 +90,25 @@ body {
   color: #FFFFFF;
   font-size: medium; }
 
+/* 物資圖片樣式 */
+.itemImg {
+  margin: auto;
+  height: 250px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .itemImg {
+      height: 330px; } }
+  @media screen and (max-width: 767px) {
+    .itemImg {
+      height: 175px; } }
+
 /* 物資文字樣式 */
 .wishItem,
 .giveItem,
 .exchangeItem {
   background-color: #f8f7f7;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.11); }
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  margin-bottom: 20px; }
   .wishItem .itemContent,
   .giveItem .itemContent,
   .exchangeItem .itemContent {
@@ -106,26 +117,26 @@ body {
   .wishItem .itemName,
   .giveItem .itemName,
   .exchangeItem .itemName {
-    font-size: 17px;
-    padding: 15px 15px 40px 15px; }
+    font-size: 13px;
+    padding: 15px 15px 15px 15px; }
     .wishItem .itemName a,
     .giveItem .itemName a,
     .exchangeItem .itemName a {
-      color: #888888; }
-      .wishItem .itemName a h6 span,
-      .giveItem .itemName a h6 span,
-      .exchangeItem .itemName a h6 span {
-        color: #01B468; }
-      .wishItem .itemName a h5 span,
-      .giveItem .itemName a h5 span,
-      .exchangeItem .itemName a h5 span {
-        color: black; }
+      color: #543939; }
   .wishItem .itemBy,
   .giveItem .itemBy,
   .exchangeItem .itemBy {
-    font-size: 13px;
-    padding: 15px 15px 15px 15px; }
+    font-size: 17px;
+    padding: 15px 15px 40px 15px; }
     .wishItem .itemBy a,
     .giveItem .itemBy a,
     .exchangeItem .itemBy a {
-      color: #543939; }
+      color: #888888; }
+      .wishItem .itemBy a h6 span,
+      .giveItem .itemBy a h6 span,
+      .exchangeItem .itemBy a h6 span {
+        color: #01B468; }
+      .wishItem .itemBy a h5 span,
+      .giveItem .itemBy a h5 span,
+      .exchangeItem .itemBy a h5 span {
+        color: black; }

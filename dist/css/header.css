@@ -19,9 +19,10 @@ body {
   body {
     padding-top: 155px; } }
 
-/* 手機選單鈕垂直位置 */
+/* 手機選單鈕位置 */
 #navButton {
-  margin-top: 15px; }
+  margin-top: 23px;
+  margin-right: 15px; }
 
 /* 手機導覽列不要出現橫向卷軸 */
 #navMenuLeft,
@@ -29,9 +30,12 @@ body {
   margin-left: 0px;
   margin-right: 0px; }
 
-/* Logo區的高度*/
+/* Logo區的高度及圖片尺寸 */
 #navLogo {
-  height: 60px; }
+  height: 80px;
+  padding-top: 10px; }
+  #navLogo > img {
+    height: 60px; }
 
 /* 導覽列背景色、字體 */
 #navLayout {
