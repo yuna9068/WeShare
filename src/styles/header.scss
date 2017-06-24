@@ -6,6 +6,16 @@ $navMemberColor: #3381b1;
 $navLanguageColor: #AB82FF;
 $navFBColor: #6161fd;
 
+
+/* 連結不出現底線&出現手的符號 */
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
 /* 內容跟頂端的距離 */
 body {
     padding-top: 80px;
@@ -258,11 +268,4 @@ body {
         transform: skewX(0deg);
         transition: .3s;
     }
-}
-
-
-/* 導覽列-隱藏會員姓名及圖片 */
-
-.nav .afterLogin {
-    display: none;
 }

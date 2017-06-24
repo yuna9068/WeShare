@@ -13,12 +13,6 @@ $itemByText: #543939;
 $itemByTextMonth: #01B468;
 $itemNameText: #888888;
 
-/* 連結不出現底線 */
-
-a:hover,
-a:focus {
-	text-decoration: none;
-}
 
 body {
 	background-color: $bodyBg;
