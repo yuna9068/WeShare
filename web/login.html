@@ -27,15 +27,6 @@
 	<script src="//cdn.jsdelivr.net/holder/2.9.4/holder.min.js"></script>
 	<!-- 個人化 -->
 	<script src="../dist/js/bundle.js"></script>
-
-	<!-- Google Login -->
-	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-	<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
-	<script src="../dist/js/platform.js" async defer></script>
-	<script src="https://mail.google.com/mail/u/0/?logout&hl=en"></script>
-	<meta name="google-signin-client_id" content="${abc.getGoogleClientId()}">
-	<meta name="google-signin-scope" content="profile email">
-	<!--<jsp:useBean id="abc" class="web._00_init.GlobalService" scope="application" />-->
 </head>
 
 <body>
@@ -146,58 +137,70 @@
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<div class="row">
-									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-										<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-												<h4>使用以下服務登入</h4>
+								<div id="loginLayout">
+									<div class="row">
+										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+											<div class="row">
+												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+													<h4>使用以下服務登入</h4>
+												</div>
 											</div>
-										</div>
-										<div class="row">
-											<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-												<h4><button class="btn btn-lg btn-default btn-block" type="submit">Facebook</button></h4>
+											<div class="row">
+												<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+													<h4>
+														<button class="btn btn-lg btn-default btn-block" type="submit">
+															<i class="fa fa-facebook" aria-hidden="true"></i>
+															<span>Facebook</span>
+														</button>
+													</h4>
+												</div>
 											</div>
-										</div>
-										<div class="row">
-											<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-												<h4><button class="btn btn-lg btn-default btn-block" type="submit">Google</button></h4>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-										<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-												<h4>使用以下服務登入</h4>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-												<h4><input type="text" class="form-control" id="email" placeholder="Email"></h4>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-												<h4><input type="password" class="form-control" id="password" placeholder="Password"></h4>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-												<div class="row">
-													<div class="col-xs-12 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
-														<p><a href="#">忘記密碼？</a></p>
-													</div>
-													<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-														<p>還沒有帳號？<a href="#">註冊帳號</a></p>
-													</div>
+											<div class="row">
+												<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+													<h4>
+														<button class="btn btn-lg btn-default btn-block" type="submit">
+															<i class="fa fa-google" aria-hidden="true"></i>
+															<span>Google</span>
+														</button>
+													</h4>
 												</div>
 											</div>
 										</div>
-										<div class="row">
-											<div class="col-xs-12 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
-												<p><input type="checkbox" name="rememberMe"><span>記住帳號</span></p>
+										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+											<div class="row">
+												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+													<h4>使用帳號登入</h4>
+												</div>
 											</div>
-											<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-												<button id="btLogin" class="btn btn-default btn-block" type="submit">登入</button>
+											<div class="row">
+												<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+													<h4><input type="text" class="form-control" id="email" placeholder="Email"></h4>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+													<h4><input type="password" class="form-control" id="password" placeholder="Password"></h4>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+													<div class="row">
+														<div class="col-xs-12 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
+															<p><a href="#">忘記密碼？</a></p>
+														</div>
+														<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+															<p>還沒有帳號？<a href="#">註冊帳號</a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-12 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
+													<p><input type="checkbox" name="rememberMe"><span>記住帳號</span></p>
+												</div>
+												<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+													<button id="btLogin" class="btn btn-default btn-block" type="submit">登入</button>
+												</div>
 											</div>
 										</div>
 									</div>
