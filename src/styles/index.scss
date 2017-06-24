@@ -53,7 +53,7 @@ body {
 
 #wishTitle {
 	border: 1px solid darken($sectionWishColor, 10%);
-	background-color: lighten($sectionWishColor, 50%) ;
+	background-color: lighten($sectionWishColor, 19%) ;
 	.titleLeft {
 		color: darken($sectionWishColor, 20%);
 	}
@@ -64,7 +64,7 @@ body {
 
 #giveTitle {
 	border: 1px solid darken($sectionGiveColor, 10%);
-	background-color: lighten($sectionGiveColor, 50%);
+	background-color: lighten($sectionGiveColor, 25%);
 	.titleLeft {
 		color:  darken($sectionGiveColor, 20%);
 	}
@@ -75,7 +75,7 @@ body {
 
 #exchangeTitle {
 	border: 1px solid darken($sectionExchangeColor, 10%);
-	background-color: lighten($sectionExchangeColor, 50%);
+	background-color: lighten($sectionExchangeColor, 57%);
 	.titleLeft {
 		color: darken($sectionExchangeColor, 20%);
 	}
@@ -88,11 +88,13 @@ body {
 /* 物資區塊背景色及右邊文字樣式 */
 
 #wishContent,
-#giveContent,
-#exchangeContent {
+#giveContent {
 	margin-bottom: 200px;
 }
 
+#exchangeContent {
+	margin-bottom: 200px;
+}
 
 /* 標題及左邊文字樣式 */
 
@@ -152,8 +154,6 @@ body {
 	border: 1px solid rgba(0, 0, 0, 0.11);
 	.itemContent {
 		letter-spacing: 2px;
-		margin-top: 5px;
-		margin-top: 5px;
 		padding-bottom: 15px;
 	}
 	.itemName {
