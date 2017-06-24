@@ -44,7 +44,7 @@ gulp.task('styles', () => {
 // 編譯 JavaScript 轉譯、合併、壓縮任務，完成後送到 dist/js/bundle.js
 gulp.task('scripts', function () {
 	return browserify({
-			entries: ['./src/scripts/main.js']
+			entries: ['./src/scripts/*.js']
 		})
 		.transform(babelify) // 轉譯
 		.bundle()
