@@ -11,6 +11,11 @@ $wishGoodsNameText: #888888;
 }
 
 
+/* 條件區塊樣式 */
+.blockFilter {
+	margin-bottom: 25px;
+}
+
 /* 條件標題樣式 */
 
 .btFilterTitle {
@@ -36,7 +41,7 @@ $wishGoodsNameText: #888888;
 	color: #FFFFFF;
 }
 
-/* 搜尋鈕樣式*/
+/* 搜尋鈕樣式 */
 #btKWSearch {
 	margin-bottom: 10px;
 }
@@ -48,9 +53,6 @@ $wishGoodsNameText: #888888;
 	display: block;
 	border-radius: 5px;
 	overflow: hidden;
-    img {
-        min-height: 210px;
-    }
 }
 
 .wishGoodsA:hover .wishGoodsOverlay {
@@ -69,6 +71,19 @@ $wishGoodsNameText: #888888;
 	background-color: $sectionOverlayColor;
 	transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
 	color: $sectionTitleColor;
+}
+
+
+/* 物資圖片樣式 */
+.wishGoodsImg {
+	margin: auto;
+	height: 300px;
+	@media screen and (min-width:950px) and (max-width:1200px){
+		height: 250px;
+	}
+	@media screen and (min-width:700px) and (max-width:949px){
+		height: 150px;
+	}
 }
 
 /* 物資文字樣式 */
