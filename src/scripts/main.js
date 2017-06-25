@@ -1,4 +1,5 @@
 $(function(){
+
 	// Ajax 範例
 	/*
 	$.ajax({
