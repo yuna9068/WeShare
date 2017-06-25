@@ -24,6 +24,7 @@
 		var loginOk = "${LoginOK}";
 		var indname = "${LoginOK.indname}";
 		var indid = "${LoginOK.indid}";
+		var rememberMe = "${sessionScope.rememberMe}";
 	</script>
 
 	<!-- jQuery -->
@@ -148,20 +149,24 @@
 				<div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
 					<div id="loginContent">
 						<div class="row">
+							<!--logo圖-->
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<div class="text-center loginLogo">
 									<img src="../dist/img/WeShare_logo.png" width="60" alt="WeShare">
 								</div>
 							</div>
+							<!--登入區塊-->
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<div id="loginLayout">
 									<div class="row">
+										<!--使用Facebook或Google帳號登入-->
 										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 											<div class="row">
 												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 													<h4>使用以下服務登入</h4>
 												</div>
 											</div>
+											<!--Facebook-->
 											<div class="row">
 												<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
 													<h4>
@@ -172,6 +177,7 @@
 													</h4>
 												</div>
 											</div>
+											<!--Google-->
 											<div class="row">
 												<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
 													<h4>
@@ -183,6 +189,7 @@
 												</div>
 											</div>
 										</div>
+										<!--使用自行註冊的帳號登入-->
 										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
 											<div class="row">
 												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -190,19 +197,30 @@
 												</div>
 											</div>
 											<form action="server" method="POST" name="loginForm">
+												<!--輸入帳號-->
 												<div class="row">
 													<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-														<h4><input type="text" class="form-control" id="loginId" placeholder="帳號" name="server"></h4>
+														<h4><input type="text" class="form-control" id="loginId" placeholder="帳號" name="server" value="server"></h4>
 													</div>
 												</div>
+												<!--輸入密碼-->
 												<div class="row">
 													<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-														<h4><input type="password" class="form-control" id="loginPW" placeholder="密碼" name="server"></h4>
+														<h4><input type="password" class="form-control" id="loginPW" placeholder="密碼" name="server" value="server"></h4>
 													</div>
 												</div>
+												<!--顯示錯誤訊息-->
+												<div class="row">
+													<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+														<h4 class="loginErrorMsg">顯示錯誤訊息(server)</h4>
+														<h4 class="loginErrorMsg">顯示錯誤訊息(server)</h4>
+														<h4 class="loginErrorMsg">顯示錯誤訊息(server)</h4>
+													</div>
+												</div>
+												<!--保持登入-->
 												<div class="row">
 													<div class="col-xs-12 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
-														<p><input type="checkbox" name="rememberMe"><span>記住帳號</span></p>
+														<p><input type="checkbox" name="rememberMe"><span>保持登入</span></p>
 													</div>
 													<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
 														<button id="btLogin" class="btn btn-default btn-block" type="submit">登入</button>
@@ -212,9 +230,11 @@
 											<div class="row">
 												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 													<div class="row">
+														<!--忘記密碼-->
 														<div class="col-xs-12 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
 															<p><a href="#">忘記密碼？</a></p>
 														</div>
+														<!--註冊帳號-->
 														<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 															<p>還沒有帳號？<a href="#">註冊帳號</a></p>
 														</div>
