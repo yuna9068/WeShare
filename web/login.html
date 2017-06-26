@@ -38,13 +38,23 @@
 	<script src="../dist/js/login.js"></script>
 
 	<!-- Google Login -->
-	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-	<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
-	<script src="../dist/js/platform.js" async defer></script>
-	<script src="https://mail.google.com/mail/u/0/?logout&hl=en"></script>
-	<meta name="google-signin-client_id" content="${abc.getGoogleClientId()}">
 	<meta name="google-signin-scope" content="profile email">
-	<!--<jsp:useBean id="abc" class="web._00_init.GlobalService" scope="application" />-->
+	<meta name="google-signin-client_id" content="${abc.getGoogleClientId()}">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script type="text/javascript" src="https://mail.google.com/mail/u/0/?logout&hl=en"></script>	
+	<!--<script>
+		function onSignIn(googleUser) {
+			var profile = googleUser.getBasicProfile();
+			var redirectUrl = '/Demo/web/_02_login/controller/GoogleLogin.do';
+			var form = $('<form action="' + redirectUrl + '" method="post">'
+					+ '<input type="text" name="id_token" value="'
+					+ googleUser.getAuthResponse().id_token + '" />' + '</form>');
+			$('body').append(form);
+			form.submit();
+		}
+	</script>
+	<jsp:useBean id="abc" class="web._00_init.GlobalService" scope="application" />-->
+	
 </head>
 
 <body>
@@ -183,6 +193,7 @@
 													<h4>
 														<button class="btn btn-lg btn-default btn-block" type="submit">
 															<i class="fa fa-google" aria-hidden="true"></i>
+															<div class="g-signin2 " data-onsuccess="onSignIn"></div>
 															<span>Google</span>
 														</button>
 													</h4>
@@ -236,7 +247,7 @@
 														</div>
 														<!--註冊帳號-->
 														<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-															<p>還沒有帳號？<a href="#">註冊帳號</a></p>
+															<p>還沒有帳號？<a href="signup.html">註冊帳號</a></p>
 														</div>
 													</div>
 												</div>
