@@ -8,7 +8,7 @@ body {
 
 /* 登入區塊 */
 #sectionContent {
-  height: calc(100vh - 306px); }
+  min-height: calc(100vh - 306px); }
   #sectionContent #loginContent {
     margin-top: 100px;
     margin-bottom: 100px; }
