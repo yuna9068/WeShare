@@ -29,7 +29,7 @@ const scriptsPaths = {
 };
 
 const imagesPaths = {
-	src: `${dirs.src}/images/*/*`,
+	src: `${dirs.src}/images/*`,
 	dest: `${dirs.dest}/img`
 };
 

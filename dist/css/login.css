@@ -7,34 +7,51 @@ body {
     width: 1300px; } }
 
 /* 登入區塊 */
-#sectionContent #loginContent {
-  margin-top: 100px;
-  margin-bottom: 100px; }
-  #sectionContent #loginContent #loginLayout {
-    margin-top: 45px;
-    padding: 20px 40px;
-    background-color: snow;
-    border-radius: 5px;
-    color: #3e3e3e;
-    border: 1px solid #d0d0d0; }
-    #sectionContent #loginContent #loginLayout .loginLayoutLeft {
-      border-right: 1px solid #ddd; }
-      #sectionContent #loginContent #loginLayout .loginLayoutLeft .fbBtn {
-        background-color: #3b5998;
-        color: #d6e3ff; }
-      #sectionContent #loginContent #loginLayout .loginLayoutLeft .googleBtn {
-        background-color: #bb4c36;
-        color: #fcded8; }
-    #sectionContent #loginContent #loginLayout .loginLayoutRight .keepLogin input {
-      vertical-align: text-bottom; }
-    #sectionContent #loginContent #loginLayout .loginLayoutRight .keepLogin span {
-      padding-left: 5px; }
+#sectionContent {
+  height: calc(100vh - 306px); }
+  #sectionContent #loginContent {
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    #sectionContent #loginContent #loginLayout {
+      margin-top: 45px;
+      padding: 20px 40px;
+      background-color: snow;
+      border-radius: 5px;
+      color: #3e3e3e;
+      border: 1px solid #d0d0d0;
+      /* 服務登入 */
+      /* 帳號登入 */ }
+      #sectionContent #loginContent #loginLayout #loginLayoutLeft {
+        border-right: 1px solid #ddd;
+        /* Facebook登入 */
+        /* Google登入 */ }
+        #sectionContent #loginContent #loginLayout #loginLayoutLeft #btFB {
+          background-color: #3b5998;
+          color: #d6e3ff; }
+        #sectionContent #loginContent #loginLayout #loginLayoutLeft #btGoogle {
+          background-color: #bb4c36;
+          color: #fcded8; }
+      #sectionContent #loginContent #loginLayout #loginLayoutRight {
+        /* 錯誤訊息 */
+        /* 保持登入 */
+        /* 登入按鈕 */ }
+        #sectionContent #loginContent #loginLayout #loginLayoutRight .loginErrorMsg {
+          color: #ff0000; }
+        #sectionContent #loginContent #loginLayout #loginLayoutRight #keepLogin input {
+          vertical-align: text-bottom; }
+        #sectionContent #loginContent #loginLayout #loginLayoutRight #keepLogin span {
+          padding-left: 5px; }
+        #sectionContent #loginContent #loginLayout #loginLayoutRight #btLogin {
+          color: snow;
+          background-color: #1967bc;
+          font-size: 16px; }
 
-.leftText,
-.rightText {
+/* 標題 */
+#leftText,
+#rightText {
   color: #008ea3; }
-  .leftText:before,
-  .rightText:before {
+  #leftText:before,
+  #rightText:before {
     position: relative;
     left: -5px;
     top: 1px;
@@ -44,12 +61,3 @@ body {
     width: 3px;
     border-radius: 15px;
     background: #00bbd6; }
-
-/* 帳號登入按鈕 */
-#btLogin {
-  color: snow;
-  background-color: #1967bc;
-  font-size: 16px; }
-
-.loginErrorMsg {
-  color: #ff0000; }
