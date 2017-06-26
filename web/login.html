@@ -39,8 +39,8 @@
 
 	<!-- Google Login -->
 	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-	<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
-	<script src="../dist/js/platform.js" async defer></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<!--<script src="../dist/js/platform.js" async defer></script>-->
 	<script src="https://mail.google.com/mail/u/0/?logout&hl=en"></script>
 	<meta name="google-signin-client_id" content="${abc.getGoogleClientId()}">
 	<meta name="google-signin-scope" content="profile email">
@@ -112,7 +112,7 @@
 							<li><a href="#">物資箱</a></li>
 							<li><a href="#">站內信</a></li>
 							<li class="divider"></li>
-                    		<li><a href="#">登出</a></li>
+							<li><a href="#">登出</a></li>
 						</ul>
 					</li>
 					<li class="afterLogin">
@@ -144,9 +144,9 @@
 	</header>
 
 	<section>
-		<div class="container">
+		<div id="sectionContent" class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+				<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
 					<div id="loginContent">
 						<div class="row">
 							<!--logo圖-->
@@ -160,83 +160,87 @@
 								<div id="loginLayout">
 									<div class="row">
 										<!--使用Facebook或Google帳號登入-->
-										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-											<div class="row">
-												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-													<h4 class="leftText">使用以下服務登入</h4>
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+											<div class="loginLayoutLeft">
+												<div class="row">
+													<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+														<h4 class="leftText">使用以下服務登入</h4>
+													</div>
 												</div>
-											</div>
-											<!--Facebook-->
-											<div class="row">
-												<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-													<h4>
-														<button class="btn btn-lg btn-default btn-block" type="submit">
-															<i class="fa fa-facebook" aria-hidden="true"></i>
-															<span>Facebook</span>
-														</button>
-													</h4>
+												<!--Facebook-->
+												<div class="row">
+													<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+														<h4>
+															<button class="btn btn-lg btn-default btn-block fbBtn" type="submit">
+																<i class="fa fa-facebook" aria-hidden="true"></i>
+																<span>Facebook</span>
+															</button>
+														</h4>
+													</div>
 												</div>
-											</div>
-											<!--Google-->
-											<div class="row">
-												<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-													<h4>
-														<button class="btn btn-lg btn-default btn-block" type="submit">
-															<i class="fa fa-google" aria-hidden="true"></i>
-															<span>Google</span>
-														</button>
-													</h4>
+												<!--Google-->
+												<div class="row">
+													<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+														<h4>
+															<button class="btn btn-lg btn-default btn-block googleBtn" type="submit">
+																<i class="fa fa-google" aria-hidden="true"></i>
+																<span>Google</span>
+															</button>
+														</h4>
+													</div>
 												</div>
 											</div>
 										</div>
 										<!--使用自行註冊的帳號登入-->
-										<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-											<div class="row">
-												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-													<h4 class="rightText">使用帳號登入</h4>
-												</div>
-											</div>
-											<form action="server" method="POST" name="loginForm">
-												<!--輸入帳號-->
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+											<div class="loginLayoutRight">
 												<div class="row">
-													<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-														<h4><input type="text" class="form-control" id="loginId" placeholder="帳號" name="server"></h4>
+													<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+														<h4 class="rightText">使用帳號登入</h4>
 													</div>
 												</div>
-												<!--輸入密碼-->
-												<div class="row">
-													<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-														<h4><input type="password" class="form-control" id="loginPW" placeholder="密碼" name="server"></h4>
-													</div>
-												</div>
-												<!--顯示錯誤訊息-->
-												<div class="row">
-													<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
-														<h4 class="loginErrorMsg sr-only">顯示錯誤訊息(server)</h4>
-														<h4 class="loginErrorMsg sr-only">顯示錯誤訊息(server)</h4>
-														<h4 class="loginErrorMsg sr-only">顯示錯誤訊息(server)</h4>
-													</div>
-												</div>
-												<!--保持登入-->
-												<div class="row">
-													<div class="col-xs-12 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
-														<p><input type="checkbox" name="rememberMe"><span>保持登入</span></p>
-													</div>
-													<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-														<button id="btLogin" class="btn btn-default btn-block" type="submit">登入</button>
-													</div>
-												</div>
-											</form>
-											<div class="row">
-												<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+												<form action="server" method="POST" name="loginForm">
+													<!--輸入帳號-->
 													<div class="row">
-														<!--忘記密碼-->
-														<div class="col-xs-12 col-sm-offset-2 col-sm-3 col-md-offset-2 col-md-3 col-lg-offset-2 col-lg-3">
-															<p><a href="#">忘記密碼？</a></p>
+														<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+															<h4><input type="text" class="form-control" id="loginId" placeholder="帳號" name="server"></h4>
 														</div>
-														<!--註冊帳號-->
-														<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-															<p>還沒有帳號？<a href="#">註冊帳號</a></p>
+													</div>
+													<!--輸入密碼-->
+													<div class="row">
+														<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+															<h4><input type="password" class="form-control" id="loginPW" placeholder="密碼" name="server"></h4>
+														</div>
+													</div>
+													<!--顯示錯誤訊息-->
+													<div class="row">
+														<div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+															<h4 class="loginErrorMsg sr-only">顯示錯誤訊息(server)</h4>
+															<h4 class="loginErrorMsg sr-only">顯示錯誤訊息(server)</h4>
+															<h4 class="loginErrorMsg sr-only">顯示錯誤訊息(server)</h4>
+														</div>
+													</div>
+													<!--保持登入-->
+													<div class="row">
+														<div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5">
+															<h5 class="keepLogin"><input type="checkbox" name="rememberMe"><span>保持登入</span></h5>
+														</div>
+														<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5">
+															<button id="btLogin" class="btn btn-default btn-block" type="submit">登入</button>
+														</div>
+													</div>
+												</form>
+												<div class="row">
+													<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+														<div class="row">
+															<!--忘記密碼-->
+															<div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5">
+																<h5><a href="#">忘記密碼？</a></h5>
+															</div>
+															<!--註冊帳號-->
+															<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+																<h5>還沒有帳號？<a href="#">註冊帳號</a></h5>
+															</div>
 														</div>
 													</div>
 												</div>
