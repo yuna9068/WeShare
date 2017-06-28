@@ -13,7 +13,7 @@ body {
 }
 
 @media screen and (min-width: 1500px) {
-	#sectionContent {
+	#sectionLogin {
 		width: 1300px;
 	}
 }
@@ -21,7 +21,7 @@ body {
 
 /* 登入區塊 */
 
-#sectionContent {
+#sectionLogin {
 	min-height: calc(100vh - 306px);
 	#loginContent {
 		margin-top: 100px;
@@ -43,8 +43,10 @@ body {
 				}
 				/* Google登入 */
 				#btGoogle {
-					background-color: $btGoogleBg;
-					color: $googleColor;
+					/* 限制 Google Button 寬度 */
+					> div {
+						max-width: 100%;
+					}
 				}
 			}
 			/* 帳號登入 */

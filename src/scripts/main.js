@@ -1,4 +1,16 @@
+// 字串取代處理
+function replaceString(_str, _bf, _af, _flg){
+	var _reg = new RegExp(_bf || '[\\.#]', _flg || '');
+	return _str ? _str.replace(_reg, _af || '') : false;
+}
+
 $(function(){
+	// wish.html 側邊欄位收合
+	// 滑動選單的開閉按鈕設定
+	// $().find('a').on('click', function(){
+		
+	// 	$(prop.subContainer).toggleClass(replaceString(prop.mainNavigation_appear));
+	// });
 
 	// Ajax 範例
 	/*
