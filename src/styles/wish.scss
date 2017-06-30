@@ -1,5 +1,5 @@
-$sectionOverlayColor: rgba(0, 0, 0, 0.5);
-$sectionTitleColor: #FFFFFF;
+$sectionOverlayColor: rgba(255, 255, 255, 0.5);
+$sectionTitleColor: #666666;
 $byBg: #ffb8b8;
 $classBg: #feb36b;
 $locBg: #b25cc1;
@@ -8,6 +8,7 @@ $wishGoodsByText: #543939;
 $wishGoodsByTextMonth: #01B468;
 $wishGoodsNameText: #888888;
 $sectionFilter: #fff4f4;
+$iconFilter:#ff9797;
 #sectionWish {
 	margin-top: 30px;
 	font-size: 18px;
@@ -28,40 +29,38 @@ $sectionFilter: #fff4f4;
 		height: calc(100vh - 80px);
 		// sm
 		@media screen and (min-width: 768px) {
-			top: 160px;
+			// top: 160px;
 			left: -41.66666667%;
 			height: calc(100vh - 160px);
 		}
 		// md
 		@media screen and (min-width: 992px) {
-			top: 80px;
+			// top: 80px;
 			left: -33.33333333%;
 			height: calc(100vh - 80px);
 		}
 		// lg
 		@media screen and (min-width: 1200px) {
-			top: 80px;
+			// top: 80px;
 			left: -16.66666667%;
 			height: calc(100vh - 80px);
+		}		
+		@media screen and (min-width: 768px) and (max-width:1023px){
+			top: 160px;
+		}
+		@media screen and (min-width: 1024px){ // 984
+			top: 80px;
 		}
 		#sectionFilterContent {
 			position: relative;
 
+			/* 捲軸 */
 			#contentScroll {
 				overflow-y: scroll;
-				// xs
-				height: calc(100vh - 80px);
-				// sm
-				@media screen and (min-width: 768px) {
-					height: calc(100vh - 160px);
-				}
-				// md
-				@media screen and (min-width: 992px) {
-					height: calc(100vh - 80px);
-				}
-				// lg
-				@media screen and (min-width: 1200px) {
-					height: calc(100vh - 80px);
+				height: calc(100vh - 90px);
+				
+				@media screen and (min-width: 768px) and (max-width: 1023px) {
+					height: calc(100vh - 170px);
 				}
 			}
 
@@ -99,7 +98,6 @@ $sectionFilter: #fff4f4;
 					text-align: left;
 					border-radius: 0;
 					border-left: 15px solid;
-					// border-color:  #ffb8b8;
 					&:hover, &:focus {
 						outline-color: rgba(255, 255, 255, 0);
 						color: snow;
@@ -110,21 +108,19 @@ $sectionFilter: #fff4f4;
 				.btFilterBlock>ul {
 					padding: 5px 5px 5px 20px;
 					margin-bottom: 0;
-					// background-color: #ffd2d2;
 					>li {
 						display: inline-block;
 						width: 44%;
 						margin: 5px;
 						/* 條件選項按鈕 */
 						.btnFilterType {
-							// background-color: #ee4444;
 							width: 100%;
 							font-size: 16px;
 							color: #f5f5f5;
 						}
 					}
 				}
-				/* 需求者身分 */
+				/* 需求者身份標題及選項顏色 */
 				#btBy {
 					border-color: $byBg;
 					&:hover, &:focus {
@@ -137,7 +133,7 @@ $sectionFilter: #fff4f4;
 						background-color: darken($byBg, 5%);
 					}
 				}
-				/* 物資類別 */
+				/* 物資類別標題及選項顏色 */
 				#btClass {
 					border-color: $classBg;
 					&:hover, &:focus {
@@ -150,7 +146,7 @@ $sectionFilter: #fff4f4;
 						background-color: darken($classBg, 10%);
 					}
 				}
-				/* 物資需求地 */
+				/* 物資需求地標題及選項顏色 */
 				#btLoc {
 					border-color: $locBg;
 					&:hover, &:focus {
@@ -165,86 +161,133 @@ $sectionFilter: #fff4f4;
 				}
 			}
 
+			/* 收和按鈕 */
 			#slideMenuTrigger {
 				position: absolute;
 				top: 0;
-				right: -115px;
-				width: 100px;
-				height: 100px;
+				right: -75px;
+				width: 60px;
+				height: 60px;
+				font-size: 30px;
+				background-color: $sectionFilter;
+				color: $iconFilter;
 			}
 		}
 		
 	}
 
-	// 滑動選單的開閉按鈕設定
+	/* 左邊條件篩選區的收和設定 */
 	#sectionFilter.active {
 		left: 0;
 	}
+
+
+	/* 右邊物資區 */
+	#sectionGoods{
+		/* 物資區塊樣式 */
+		.wishGoods {
+			background-color: $wishGoods;
+			border-radius: 5px;
+			border: 1px solid rgba(0, 0, 0, 0.11);
+			margin-bottom: 20px;
+			
+			.wishGoodsA {
+				position: relative;
+				display: block;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+
+			/* 物資圖片樣式 */
+			.wishGoodsImg {
+				margin: auto;
+				height: 300px;
+				@media screen and (max-width:767px) {
+					min-height: 150px;
+				}
+				@media screen  and (min-width:768px) and (max-width:991px) {
+					height: 200px;
+				}
+			}
+
+			/* 文字間距 */
+			.wishGoodsContent {
+				letter-spacing: 2px;
+				margin-top: 5px;
+			}
+			/* 需求物資名稱 */
+			.wishGoodsName {
+				font-size: 16px;
+				padding-left: 10px;
+			}
+			/* 需求物資發佈者 */
+			.wishGoodsBy {
+				font-size: 13px;
+				padding-left: 10px;
+			}
+			/* 需求物資描述 */
+			.wishGoodsDesc {
+				font-size: 15px;
+				padding-left: 10px;
+				border: 2px solid red;
+				color: red;
+			}
+
+			.wishGoodsDesc:hover{
+				font-size: 15px;
+				padding-left: 10px;
+				box-shadow: inset 0 0 0 2em red;
+				color: #ffffff;
+				transition: 1s;
+			}
+		}
+	}
+	
 }
+
+// /* 滑鼠移至物資 */
+// .wishGoodsA:hover .wishGoodsOverlay {
+// 	opacity: 0.9;
+// }
+
+// .wishGoodsOverlay {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// 	padding: 10px;
+// 	opacity: 0;
+// 	border-radius: 5px;
+// 	background-color: $sectionOverlayColor;
+// 	transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+// 	color: $sectionTitleColor;
+// }
 
 
 /* 滑鼠移至物資 */
+.wishGoodsA:hover {
+	.wishGoodsOverlay {
+		top: 0;
+		background-color: $sectionOverlayColor;
+		transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+	}	
 
-.wishGoodsA {
-	position: relative;
-	display: block;
-	border-radius: 5px;
-	overflow: hidden;
-}
-
-.wishGoodsA:hover .wishGoodsOverlay {
-	opacity: 0.9;
-}
+} 
 
 .wishGoodsOverlay {
 	position: absolute;
-	top: 0;
+	top: 50%;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	padding: 10px;
-	opacity: 0;
+	opacity: 1;
 	border-radius: 5px;
-	background-color: $sectionOverlayColor;
-	transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
 	color: $sectionTitleColor;
 }
 
 
-/* 物資圖片樣式 */
-
-.wishGoodsImg {
-	margin: auto;
-	height: 300px;
-	@media screen and (min-width: 950px) and (max-width:1200px) {
-		height: 250px;
-	}
-	@media screen and (min-width:700px) and (max-width:949px) {
-		height: 150px;
-	}
-}
 
 
-/* 物資文字樣式 */
 
-.wishGoods {
-	background-color: $wishGoods;
-	border-radius: 5px;
-	border: 1px solid rgba(0, 0, 0, 0.11);
-	.wishGoodsContent {
-		letter-spacing: 2px;
-		margin-top: 5px;
-	}
-	.wishGoodsName {
-		font-size: 16px;
-		padding-left: 10px;
-	}
-	.wishGoodsBy {
-		font-size: 13px;
-		padding-left: 10px;
-	}
-	.wishGoodsDesc {
-		font-size: 15px;
-		padding-left: 10px;
-	}
-}
