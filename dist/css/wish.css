@@ -128,22 +128,28 @@
   #sectionWish #sectionFilter.active {
     left: 0; }
   #sectionWish #sectionGoods {
+    padding-left: 50px;
+    padding-right: 50px;
     /* 物資區塊樣式 */ }
     #sectionWish #sectionGoods .wishGoods {
       background-color: #f8f7f7;
       border-radius: 5px;
       border: 1px solid rgba(0, 0, 0, 0.11);
       margin-bottom: 20px;
+      /* 滑鼠移至物資 */
       /* 物資圖片樣式 */
-      /* 文字間距 */
-      /* 需求物資名稱 */
-      /* 需求物資發佈者 */
-      /* 需求物資描述 */ }
+      /* 物資文字區塊 */ }
       #sectionWish #sectionGoods .wishGoods .wishGoodsA {
         position: relative;
         display: block;
         border-radius: 5px;
         overflow: hidden; }
+      #sectionWish #sectionGoods .wishGoods .wishGoodsA:hover .wishGoodsOverlay {
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1); }
+        #sectionWish #sectionGoods .wishGoods .wishGoodsA:hover .wishGoodsOverlay .wishGoodsOverlayText {
+          top: 50%;
+          transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1); }
       #sectionWish #sectionGoods .wishGoods .wishGoodsImg {
         margin: auto;
         height: 300px; }
@@ -153,40 +159,49 @@
         @media screen and (min-width: 768px) and (max-width: 991px) {
           #sectionWish #sectionGoods .wishGoods .wishGoodsImg {
             height: 200px; } }
-      #sectionWish #sectionGoods .wishGoods .wishGoodsContent {
-        letter-spacing: 2px;
-        margin-top: 5px; }
-      #sectionWish #sectionGoods .wishGoods .wishGoodsName {
-        font-size: 16px;
-        padding-left: 10px; }
-      #sectionWish #sectionGoods .wishGoods .wishGoodsBy {
-        font-size: 13px;
-        padding-left: 10px; }
-      #sectionWish #sectionGoods .wishGoods .wishGoodsDesc {
-        font-size: 15px;
-        padding-left: 10px;
-        border: 2px solid red;
-        color: red; }
-      #sectionWish #sectionGoods .wishGoods .wishGoodsDesc:hover {
-        font-size: 15px;
-        padding-left: 10px;
-        box-shadow: inset 0 0 0 2em red;
-        color: #ffffff;
-        transition: 1s; }
-
-/* 滑鼠移至物資 */
-.wishGoodsA:hover .wishGoodsOverlay {
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1); }
-
-.wishGoodsOverlay {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  opacity: 1;
-  border-radius: 5px;
-  color: #666666; }
+      #sectionWish #sectionGoods .wishGoods .wishGoodsOverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        opacity: 1;
+        border-radius: 5px; }
+      #sectionWish #sectionGoods .wishGoods .wishGoodsOverlayText {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #666666;
+        /* 文字間距 */
+        /* 需求物資名稱 */
+        /* 需求物資發佈者 */
+        /* 需求物資描述 */
+        /* 滑鼠移至需求物資描述 */ }
+        #sectionWish #sectionGoods .wishGoods .wishGoodsOverlayText .wishGoodsContent {
+          letter-spacing: 2px;
+          margin-top: 5px; }
+        #sectionWish #sectionGoods .wishGoods .wishGoodsOverlayText .wishGoodsName {
+          font-size: 22px;
+          padding-left: 10px;
+          text-shadow: 0px 0px 15px #ffd35f; }
+        #sectionWish #sectionGoods .wishGoods .wishGoodsOverlayText .wishGoodsBy {
+          font-size: 18px;
+          padding-left: 10px;
+          text-shadow: 0px 0px 15px #ffd35f; }
+        #sectionWish #sectionGoods .wishGoods .wishGoodsOverlayText .wishGoodsDesc {
+          font-size: 18px;
+          margin-top: 25px;
+          margin-left: 30px;
+          padding: 10px;
+          text-align: center;
+          width: 30%;
+          border: 2px solid #337ab7;
+          color: #337ab7;
+          transition: 1s; }
+        #sectionWish #sectionGoods .wishGoods .wishGoodsOverlayText .wishGoodsDesc:hover {
+          box-shadow: inset 0 0 0 2em #337ab7;
+          color: #ffffff;
+          transition: 1s; }
