@@ -1,4 +1,5 @@
-$sectionOverlayColor: rgba(255, 255, 255, 0.5);
+$sectionWishBg: rgba(255, 151, 151, 0.12);
+$sectionOverlayColor: rgba(255, 255, 255, 0.9);
 $sectionTitleColor: #666666;
 $byBg: #ffb8b8;
 $classBg: #feb36b;
@@ -11,60 +12,50 @@ $sectionFilter: #fff4f4;
 $iconFilter:#ff9797;
 $wishGoodsDesc:#337ab7;
 #sectionWish {
-	margin-top: 30px;
+	padding-top: 30px;
 	font-size: 18px;
 	min-height: calc(100vh - 336px);
+	background-color: $sectionWishBg;
 	/* 左邊條件篩選區 */
 	#sectionFilter {
 		position: fixed;
 		padding-top: 10px;
 		background-color: $sectionFilter;
 		transition: left 0.4s ease-in-out;
-
-		// Bootstrap3 fix z-index: 1030;
+		/* Bootstrap3 fix z-index: 1030; */
 		z-index: 1031;
-
-		// xs
+		/* xs */
 		top: 80px;
 		left: -66.66666667%;
 		height: calc(100vh - 80px);
-		// sm
+		/* sm */
 		@media screen and (min-width: 768px) {
-			// top: 160px;
+			top: 160px;
 			left: -41.66666667%;
 			height: calc(100vh - 160px);
 		}
-		// md
+		/* md */
 		@media screen and (min-width: 992px) {
-			// top: 80px;
+			top: 80px;
 			left: -33.33333333%;
 			height: calc(100vh - 80px);
 		}
-		// lg
+		/* lg */
 		@media screen and (min-width: 1200px) {
-			// top: 80px;
-			left: -16.66666667%;
-			height: calc(100vh - 80px);
-		}		
-		@media screen and (min-width: 768px) and (max-width:1023px){
-			top: 160px;
-		}
-		@media screen and (min-width: 1024px){ // 984
 			top: 80px;
+			left: -25%;
+			height: calc(100vh - 80px);
 		}
 		#sectionFilterContent {
 			position: relative;
-
 			/* 捲軸 */
 			#contentScroll {
 				overflow-y: scroll;
 				height: calc(100vh - 90px);
-				
 				@media screen and (min-width: 768px) and (max-width: 1023px) {
 					height: calc(100vh - 170px);
 				}
 			}
-
 			/* 搜尋 */
 			#blockKWSearch {
 				position: relative;
@@ -88,7 +79,6 @@ $wishGoodsDesc:#337ab7;
 					margin-bottom: 10px;
 				}
 			}
-
 			/* 條件區塊樣式 */
 			.blockFilter {
 				/* 條件標題樣式 */
@@ -99,7 +89,8 @@ $wishGoodsDesc:#337ab7;
 					text-align: left;
 					border-radius: 0;
 					border-left: 15px solid;
-					&:hover, &:focus {
+					&:hover,
+					&:focus {
 						outline-color: rgba(255, 255, 255, 0);
 						color: snow;
 						transition: .5s;
@@ -124,7 +115,8 @@ $wishGoodsDesc:#337ab7;
 				/* 需求者身份標題及選項顏色 */
 				#btBy {
 					border-color: $byBg;
-					&:hover, &:focus {
+					&:hover,
+					&:focus {
 						background-color: darken($byBg, 5%);
 					}
 				}
@@ -137,7 +129,8 @@ $wishGoodsDesc:#337ab7;
 				/* 物資類別標題及選項顏色 */
 				#btClass {
 					border-color: $classBg;
-					&:hover, &:focus {
+					&:hover,
+					&:focus {
 						background-color: darken($classBg, 5%);
 					}
 				}
@@ -150,7 +143,8 @@ $wishGoodsDesc:#337ab7;
 				/* 物資需求地標題及選項顏色 */
 				#btLoc {
 					border-color: $locBg;
-					&:hover, &:focus {
+					&:hover,
+					&:focus {
 						background-color: darken($locBg, 5%);
 					}
 				}
@@ -161,7 +155,6 @@ $wishGoodsDesc:#337ab7;
 					}
 				}
 			}
-
 			/* 收和按鈕 */
 			#slideMenuTrigger {
 				position: absolute;
@@ -174,17 +167,13 @@ $wishGoodsDesc:#337ab7;
 				color: $iconFilter;
 			}
 		}
-		
 	}
-
 	/* 左邊條件篩選區的收和設定 */
 	#sectionFilter.active {
 		left: 0;
 	}
-
-
 	/* 右邊物資區 */
-	#sectionGoods{
+	#sectionGoods {
 		padding-left: 50px;
 		padding-right: 50px;
 		/* 物資區塊樣式 */
@@ -193,38 +182,42 @@ $wishGoodsDesc:#337ab7;
 			border-radius: 5px;
 			border: 1px solid rgba(0, 0, 0, 0.11);
 			margin-bottom: 20px;
-			
 			.wishGoodsA {
 				position: relative;
 				display: block;
 				border-radius: 5px;
 				overflow: hidden;
 			}
-
 			/* 滑鼠移至物資 */
 			.wishGoodsA:hover {
 				.wishGoodsOverlay {
 					background-color: $sectionOverlayColor;
 					transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 					.wishGoodsOverlayText {
-						top:50%;
+						top: 40%;
 						transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+						@media screen and (min-width: 768px) and (max-width: 991px) {
+							top:25%;
+						}
+						.wishGoodsDesc {
+							margin-top: 30px;
+						}
 					}
 				}
-			} 
-
+			}
 			/* 物資圖片樣式 */
-			.wishGoodsImg {
-				margin: auto;
-				height: 300px;
-				@media screen and (max-width:767px) {
-					min-height: 150px;
-				}
-				@media screen  and (min-width:768px) and (max-width:991px) {
-					height: 200px;
+			.wishGoodsImgLayout {
+				position: relative;
+				overflow: hidden;
+				padding-bottom: 100%;
+				.wishGoodsImg {
+					position: absolute;
+					width: 100%;
+					top: 50%;
+					left: 50%;
+					transform: translateX(-50%) translateY(-50%);
 				}
 			}
-
 			.wishGoodsOverlay {
 				position: absolute;
 				top: 0;
@@ -233,18 +226,18 @@ $wishGoodsDesc:#337ab7;
 				height: 100%;
 				padding: 10px;
 				opacity: 1;
-				border-radius: 5px;	
+				border-radius: 5px;
+				transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 			}
-			
-
 			/* 物資文字區塊 */
-			.wishGoodsOverlayText{
+			.wishGoodsOverlayText {
 				position: absolute;
-				top: 70%;
+				top: 75%;
 				left: 0;
 				width: 100%;
 				height: 100%;
 				color: $sectionTitleColor;
+				transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 				/* 文字間距 */
 				.wishGoodsContent {
 					letter-spacing: 2px;
@@ -254,36 +247,29 @@ $wishGoodsDesc:#337ab7;
 				.wishGoodsName {
 					font-size: 22px;
 					padding-left: 10px;
-					text-shadow: 0px 0px 15px #ffd35f;
 				}
 				/* 需求物資發佈者 */
 				.wishGoodsBy {
 					font-size: 18px;
 					padding-left: 10px;
-					text-shadow: 0px 0px 15px #ffd35f;
 				}
 				/* 需求物資描述 */
 				.wishGoodsDesc {
 					font-size: 18px;
-					margin-top: 25px;
-					margin-left: 30px;
+					margin-top: 100px;
 					padding: 10px;
 					text-align: center;
-					width: 30%;
 					border: 2px solid $wishGoodsDesc;
 					color: $wishGoodsDesc;
 					transition: 1s;
 				}
-
 				/* 滑鼠移至需求物資描述 */
-				.wishGoodsDesc:hover{
+				.wishGoodsDesc:hover {
 					box-shadow: inset 0 0 0 2em $wishGoodsDesc;
 					color: #ffffff;
 					transition: 1s;
 				}
 			}
-			
 		}
 	}
-	
 }

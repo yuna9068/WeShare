@@ -36,7 +36,7 @@
 	<!-- Favicon小圖示 -->
 	<link rel="icon" href="../dist/img/WeShare_icon.png" type="image/gif" sizes="16x16">
 
-	<title>WeShare 微分享</title>	
+	<title>WeShare 微分享</title>
 </head>
 
 <body>
@@ -150,7 +150,7 @@
 					<div class="modal-footer">
 						<a href="../index.html" type="button" class="btn btn-default">關閉視窗</a>
 					</div>
-				</div>      
+				</div>
 			</div>
 		</div>
 	</header>
@@ -161,7 +161,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="row">
 						<!-- 左邊條件篩選區 -->
-						<div id="sectionFilter" class="col-xs-8 col-sm-5 col-md-4 col-lg-2">
+						<div id="sectionFilter" class="col-xs-8 col-sm-5 col-md-4 col-lg-3">
 							<div id="sectionFilterContent">
 								<div id="contentScroll">
 									<!-- 關鍵字搜尋區塊 -->
@@ -183,13 +183,15 @@
 												<li>
 													<button class="btn btnFilterType">
 														<span>社福團體</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>個人</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 											</ul>
@@ -209,31 +211,36 @@
 												<li>
 													<button class="btn btnFilterType">
 														<span>家電產品</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>生活用品</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>服飾配件</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>食品</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>其他</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 											</ul>
@@ -253,100 +260,116 @@
 												<li>
 													<button class="btn btnFilterType">
 														<span>基隆市</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>臺北市</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>新北市</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>桃園市</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>新竹市</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>新竹縣</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>苗栗縣</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>臺中市</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>南投縣</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>彰化縣</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>雲林縣</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>嘉義市</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>嘉義縣</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>臺南市</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>高雄市</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
 												<li>
 													<button class="btn btnFilterType">
 														<span>屏東縣</span>
-														<input type="hidden" value="server">
+														<input class="findCol" type="hidden" value="server">
+														<input class="findVal" type="hidden" value="server">
 													</button>
 												</li>
-												<li>
+												<!--<li>
 													<button class="btn btnFilterType">
 														<span>臺東縣</span>
 														<input type="hidden" value="server">
@@ -381,7 +404,7 @@
 														<span>連江縣</span>
 														<input type="hidden" value="server">
 													</button>
-												</li>
+												</li>-->
 											</ul>
 										</div>
 									</div>
@@ -404,7 +427,9 @@
 									<div class="wishGoods">
 										<a href="#" class="wishGoodsA">
 											<!-- 需求物資圖片 -->
-											<img class="img-responsive wishGoodsImg" src="../dist/img/WeShare_logo.png">
+											<div class="wishGoodsImgLayout">
+												<img class="img-responsive wishGoodsImg" src="../dist/img/300x300/20170627_13.png">
+											</div>
 											<!-- 需求物資文字敘述 -->
 											<div class="wishGoodsOverlay">
 												<div class="wishGoodsOverlayText">
@@ -417,7 +442,7 @@
 														<span>By <span class="month">Matter</span> Of Mind from France</span>
 													</div>
 													<!-- 需求物資描述 -->
-													<div class="wishGoodsDesc wishGoodsContent">
+													<div class="wishGoodsDesc wishGoodsContent col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1">
 														<span>詳細資訊</span>
 													</div>
 												</div>
@@ -430,7 +455,9 @@
 									<div class="wishGoods">
 										<a href="#" class="wishGoodsA">
 											<!-- 需求物資圖片 -->
-											<img class="img-responsive wishGoodsImg" src="../dist/img/WeShare_logo.png">
+											<div class="wishGoodsImgLayout">
+												<img class="img-responsive wishGoodsImg" src="../dist/img/300x300/20170627_14.png">
+											</div>
 											<!-- 需求物資文字敘述 -->
 											<div class="wishGoodsOverlay">
 												<div class="wishGoodsOverlayText">
@@ -443,7 +470,7 @@
 														<span>By <span class="month">Matter</span> Of Mind from France</span>
 													</div>
 													<!-- 需求物資描述 -->
-													<div class="wishGoodsDesc wishGoodsContent">
+													<div class="wishGoodsDesc wishGoodsContent col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1">
 														<span>詳細資訊</span>
 													</div>
 												</div>
@@ -456,7 +483,9 @@
 									<div class="wishGoods">
 										<a href="#" class="wishGoodsA">
 											<!-- 需求物資圖片 -->
-											<img class="img-responsive wishGoodsImg" src="../dist/img/WeShare_logo.png">
+											<div class="wishGoodsImgLayout">
+												<img class="img-responsive wishGoodsImg" src="../dist/img/300x300/20170627_15.png">
+											</div>
 											<!-- 需求物資文字敘述 -->
 											<div class="wishGoodsOverlay">
 												<div class="wishGoodsOverlayText">
@@ -469,7 +498,7 @@
 														<span>By <span class="month">Matter</span> Of Mind from France</span>
 													</div>
 													<!-- 需求物資描述 -->
-													<div class="wishGoodsDesc wishGoodsContent">
+													<div class="wishGoodsDesc wishGoodsContent col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1">
 														<span>詳細資訊</span>
 													</div>
 												</div>
@@ -486,7 +515,9 @@
 									<div class="wishGoods">
 										<a href="#" class="wishGoodsA">
 											<!-- 需求物資圖片 -->
-											<img class="img-responsive wishGoodsImg" src="../dist/img/WeShare_logo.png">
+											<div class="wishGoodsImgLayout">
+												<img class="img-responsive wishGoodsImg" src="../dist/img/300x300/20170627_16.png">
+											</div>
 											<!-- 需求物資文字敘述 -->
 											<div class="wishGoodsOverlay">
 												<div class="wishGoodsOverlayText">
@@ -499,7 +530,7 @@
 														<span>By <span class="month">Matter</span> Of Mind from France</span>
 													</div>
 													<!-- 需求物資描述 -->
-													<div class="wishGoodsDesc wishGoodsContent">
+													<div class="wishGoodsDesc wishGoodsContent col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1">
 														<span>詳細資訊</span>
 													</div>
 												</div>
@@ -512,7 +543,9 @@
 									<div class="wishGoods">
 										<a href="#" class="wishGoodsA">
 											<!-- 需求物資圖片 -->
-											<img class="img-responsive wishGoodsImg" src="../dist/img/WeShare_logo.png">
+											<div class="wishGoodsImgLayout">
+												<img class="img-responsive wishGoodsImg" src="../dist/img/300x300/20170627_17.png">
+											</div>
 											<!-- 需求物資文字敘述 -->
 											<div class="wishGoodsOverlay">
 												<div class="wishGoodsOverlayText">
@@ -525,7 +558,7 @@
 														<span>By <span class="month">Matter</span> Of Mind from France</span>
 													</div>
 													<!-- 需求物資描述 -->
-													<div class="wishGoodsDesc wishGoodsContent">
+													<div class="wishGoodsDesc wishGoodsContent col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1">
 														<span>詳細資訊</span>
 													</div>
 												</div>
@@ -538,7 +571,9 @@
 									<div class="wishGoods">
 										<a href="#" class="wishGoodsA">
 											<!-- 需求物資圖片 -->
-											<img class="img-responsive wishGoodsImg" src="../dist/img/WeShare_logo.png">
+											<div class="wishGoodsImgLayout">
+												<img class="img-responsive wishGoodsImg" src="../dist/img/300x300/20170627_18.png">
+											</div>
 											<!-- 需求物資文字敘述 -->
 											<div class="wishGoodsOverlay">
 												<div class="wishGoodsOverlayText">
@@ -551,7 +586,7 @@
 														<span>By <span class="month">Matter</span> Of Mind from France</span>
 													</div>
 													<!-- 需求物資描述 -->
-													<div class="wishGoodsDesc wishGoodsContent">
+													<div class="wishGoodsDesc wishGoodsContent col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1">
 														<span>詳細資訊</span>
 													</div>
 												</div>
@@ -568,7 +603,9 @@
 									<div class="wishGoods">
 										<a href="#" class="wishGoodsA">
 											<!-- 需求物資圖片 -->
-											<img class="img-responsive wishGoodsImg" src="../dist/img/WeShare_logo.png">
+											<div class="wishGoodsImgLayout">
+												<img class="img-responsive wishGoodsImg" src="../dist/img/300x300/20170627_19.png">
+											</div>
 											<!-- 需求物資文字敘述 -->
 											<div class="wishGoodsOverlay">
 												<div class="wishGoodsOverlayText">
@@ -581,7 +618,7 @@
 														<span>By <span class="month">Matter</span> Of Mind from France</span>
 													</div>
 													<!-- 需求物資描述 -->
-													<div class="wishGoodsDesc wishGoodsContent">
+													<div class="wishGoodsDesc wishGoodsContent col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1">
 														<span>詳細資訊</span>
 													</div>
 												</div>
@@ -594,7 +631,9 @@
 									<div class="wishGoods">
 										<a href="#" class="wishGoodsA">
 											<!-- 需求物資圖片 -->
-											<img class="img-responsive wishGoodsImg" src="../dist/img/WeShare_logo.png">
+											<div class="wishGoodsImgLayout">
+												<img class="img-responsive wishGoodsImg" src="../dist/img/300x300/20170627_20.png">
+											</div>
 											<!-- 需求物資文字敘述 -->
 											<div class="wishGoodsOverlay">
 												<div class="wishGoodsOverlayText">
@@ -607,7 +646,7 @@
 														<span>By <span class="month">Matter</span> Of Mind from France</span>
 													</div>
 													<!-- 需求物資描述 -->
-													<div class="wishGoodsDesc wishGoodsContent">
+													<div class="wishGoodsDesc wishGoodsContent col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1">
 														<span>詳細資訊</span>
 													</div>
 												</div>
@@ -620,7 +659,9 @@
 									<div class="wishGoods">
 										<a href="#" class="wishGoodsA">
 											<!-- 需求物資圖片 -->
-											<img class="img-responsive wishGoodsImg" src="../dist/img/WeShare_logo.png">
+											<div class="wishGoodsImgLayout">
+												<img class="img-responsive wishGoodsImg" src="../dist/img/300x300/20170627_21.png">
+											</div>
 											<!-- 需求物資文字敘述 -->
 											<div class="wishGoodsOverlay">
 												<div class="wishGoodsOverlayText">
@@ -633,7 +674,7 @@
 														<span>By <span class="month">Matter</span> Of Mind from France</span>
 													</div>
 													<!-- 需求物資描述 -->
-													<div class="wishGoodsDesc wishGoodsContent">
+													<div class="wishGoodsDesc wishGoodsContent col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-1">
 														<span>詳細資訊</span>
 													</div>
 												</div>

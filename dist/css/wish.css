@@ -1,8 +1,9 @@
 @charset "UTF-8";
 #sectionWish {
-  margin-top: 30px;
+  padding-top: 30px;
   font-size: 18px;
   min-height: calc(100vh - 336px);
+  background-color: rgba(255, 151, 151, 0.12);
   /* 左邊條件篩選區 */
   /* 左邊條件篩選區的收和設定 */
   /* 右邊物資區 */ }
@@ -11,28 +12,30 @@
     padding-top: 10px;
     background-color: #fff4f4;
     transition: left 0.4s ease-in-out;
+    /* Bootstrap3 fix z-index: 1030; */
     z-index: 1031;
+    /* xs */
     top: 80px;
     left: -66.66666667%;
-    height: calc(100vh - 80px); }
+    height: calc(100vh - 80px);
+    /* sm */
+    /* md */
+    /* lg */ }
     @media screen and (min-width: 768px) {
       #sectionWish #sectionFilter {
+        top: 160px;
         left: -41.66666667%;
         height: calc(100vh - 160px); } }
     @media screen and (min-width: 992px) {
       #sectionWish #sectionFilter {
+        top: 80px;
         left: -33.33333333%;
         height: calc(100vh - 80px); } }
     @media screen and (min-width: 1200px) {
       #sectionWish #sectionFilter {
-        left: -16.66666667%;
+        top: 80px;
+        left: -25%;
         height: calc(100vh - 80px); } }
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-      #sectionWish #sectionFilter {
-        top: 160px; } }
-    @media screen and (min-width: 1024px) {
-      #sectionWish #sectionFilter {
-        top: 80px; } }
     #sectionWish #sectionFilter #sectionFilterContent {
       position: relative;
       /* 捲軸 */
@@ -145,20 +148,26 @@
         border-radius: 5px;
         overflow: hidden; }
       #sectionWish #sectionGoods .wishGoods .wishGoodsA:hover .wishGoodsOverlay {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.9);
         transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1); }
         #sectionWish #sectionGoods .wishGoods .wishGoodsA:hover .wishGoodsOverlay .wishGoodsOverlayText {
-          top: 50%;
+          top: 40%;
           transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1); }
-      #sectionWish #sectionGoods .wishGoods .wishGoodsImg {
-        margin: auto;
-        height: 300px; }
-        @media screen and (max-width: 767px) {
-          #sectionWish #sectionGoods .wishGoods .wishGoodsImg {
-            min-height: 150px; } }
-        @media screen and (min-width: 768px) and (max-width: 991px) {
-          #sectionWish #sectionGoods .wishGoods .wishGoodsImg {
-            height: 200px; } }
+          @media screen and (min-width: 768px) and (max-width: 991px) {
+            #sectionWish #sectionGoods .wishGoods .wishGoodsA:hover .wishGoodsOverlay .wishGoodsOverlayText {
+              top: 25%; } }
+          #sectionWish #sectionGoods .wishGoods .wishGoodsA:hover .wishGoodsOverlay .wishGoodsOverlayText .wishGoodsDesc {
+            margin-top: 30px; }
+      #sectionWish #sectionGoods .wishGoods .wishGoodsImgLayout {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 100%; }
+        #sectionWish #sectionGoods .wishGoods .wishGoodsImgLayout .wishGoodsImg {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%); }
       #sectionWish #sectionGoods .wishGoods .wishGoodsOverlay {
         position: absolute;
         top: 0;
@@ -167,14 +176,16 @@
         height: 100%;
         padding: 10px;
         opacity: 1;
-        border-radius: 5px; }
+        border-radius: 5px;
+        transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1); }
       #sectionWish #sectionGoods .wishGoods .wishGoodsOverlayText {
         position: absolute;
-        top: 70%;
+        top: 75%;
         left: 0;
         width: 100%;
         height: 100%;
         color: #666666;
+        transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
         /* 文字間距 */
         /* 需求物資名稱 */
         /* 需求物資發佈者 */
@@ -185,19 +196,15 @@
           margin-top: 5px; }
         #sectionWish #sectionGoods .wishGoods .wishGoodsOverlayText .wishGoodsName {
           font-size: 22px;
-          padding-left: 10px;
-          text-shadow: 0px 0px 15px #ffd35f; }
+          padding-left: 10px; }
         #sectionWish #sectionGoods .wishGoods .wishGoodsOverlayText .wishGoodsBy {
           font-size: 18px;
-          padding-left: 10px;
-          text-shadow: 0px 0px 15px #ffd35f; }
+          padding-left: 10px; }
         #sectionWish #sectionGoods .wishGoods .wishGoodsOverlayText .wishGoodsDesc {
           font-size: 18px;
-          margin-top: 25px;
-          margin-left: 30px;
+          margin-top: 100px;
           padding: 10px;
           text-align: center;
-          width: 30%;
           border: 2px solid #337ab7;
           color: #337ab7;
           transition: 1s; }
