@@ -1,0 +1,28 @@
+@charset "UTF-8";
+div {
+  border: 1px dotted #87cefa; }
+
+#sectionWGoods {
+  padding-top: 30px;
+  min-height: calc(100vh - 306px);
+  /*  物資圖片 */
+  /* 捐贈/詢問區塊 */ }
+  #sectionWGoods #WGoodsImgLayout {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%; }
+    #sectionWGoods #WGoodsImgLayout #WGoodsImg {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%); }
+  #sectionWGoods #blockGoodsDecide > ul {
+    margin: 0px;
+    padding: 20px; }
+    #sectionWGoods #blockGoodsDecide > ul > li {
+      display: inline-block;
+      width: 45%; }
+      #sectionWGoods #blockGoodsDecide > ul > li .btnDecide {
+        width: 100%;
+        font-size: 20px; }

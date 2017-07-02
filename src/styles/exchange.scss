@@ -1,21 +1,21 @@
-$sectionWishBg: rgba(255, 151, 151, 0.12);
+$sectionExchangeBg: rgba(239, 241, 216, 1);
 $sectionOverlayColor: rgba(255, 255, 255, 0.9);
 $sectionTitleColor: #666666;
 $byBg: #ffb8b8;
 $classBg: #feb36b;
 $locBg: #b25cc1;
-$wishGoods: #f8f7f7;
-$wishGoodsByText: #543939;
-$wishGoodsByTextMonth: #01B468;
-$wishGoodsNameText: #888888;
-$sectionFilter: #fff4f4;
-$iconFilter:#ff9797;
-$wishGoodsDesc:#337ab7;
-#sectionWish {
+$exchangeGoods: #f8f7f7;
+$exchangeGoodsByText: #543939;
+$exchangeGoodsByTextMonth: #01B468;
+$exchangeGoodsNameText: #888888;
+$sectionFilter: #e9ead5;
+$iconFilter:#01B468;
+$exchangeGoodsDesc:#337ab7;
+#sectionExchange {
 	padding-top: 30px;
 	font-size: 18px;
 	min-height: calc(100vh - 306px);
-	background-color: $sectionWishBg;
+	background-color: $sectionExchangeBg;
 	/* 左邊條件篩選區 */
 	#sectionFilter {
 		position: fixed;
@@ -177,40 +177,40 @@ $wishGoodsDesc:#337ab7;
 		padding-left: 50px;
 		padding-right: 50px;
 		/* 物資區塊樣式 */
-		.wishGoods {
-			background-color: $wishGoods;
+		.exchangeGoods {
+			background-color: $exchangeGoods;
 			border-radius: 5px;
 			border: 1px solid rgba(0, 0, 0, 0.11);
 			margin-bottom: 20px;
-			.wishGoodsA {
+			.exchangeGoodsA {
 				position: relative;
 				display: block;
 				border-radius: 5px;
 				overflow: hidden;
 			}
 			/* 滑鼠移至物資 */
-			.wishGoodsA:hover {
-				.wishGoodsOverlay {
+			.exchangeGoodsA:hover {
+				.exchangeGoodsOverlay {
 					background-color: $sectionOverlayColor;
 					transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
-					.wishGoodsOverlayText {
+					.exchangeGoodsOverlayText {
 						top: 40%;
 						transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 						@media screen and (min-width: 768px) and (max-width: 991px) {
 							top:25%;
 						}
-						.wishGoodsDesc {
+						.exchangeGoodsDesc {
 							margin-top: 30px;
 						}
 					}
 				}
 			}
 			/* 物資圖片樣式 */
-			.wishGoodsImgLayout {
+			.exchangeGoodsImgLayout {
 				position: relative;
 				overflow: hidden;
 				padding-bottom: 100%;
-				.wishGoodsImg {
+				.exchangeGoodsImg {
 					position: absolute;
 					width: 100%;
 					top: 50%;
@@ -218,7 +218,7 @@ $wishGoodsDesc:#337ab7;
 					transform: translateX(-50%) translateY(-50%);
 				}
 			}
-			.wishGoodsOverlay {
+			.exchangeGoodsOverlay {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -230,7 +230,7 @@ $wishGoodsDesc:#337ab7;
 				transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 			}
 			/* 物資文字區塊 */
-			.wishGoodsOverlayText {
+			.exchangeGoodsOverlayText {
 				position: absolute;
 				top: 75%;
 				left: 0;
@@ -239,33 +239,33 @@ $wishGoodsDesc:#337ab7;
 				color: $sectionTitleColor;
 				transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
 				/* 文字間距 */
-				.wishGoodsContent {
+				.exchangeGoodsContent {
 					letter-spacing: 2px;
 					margin-top: 5px;
 				}
 				/* 需求物資名稱 */
-				.wishGoodsName {
+				.exchangeGoodsName {
 					font-size: 22px;
 					padding-left: 10px;
 				}
 				/* 需求物資發佈者 */
-				.wishGoodsBy {
+				.exchangeGoodsBy {
 					font-size: 18px;
 					padding-left: 10px;
 				}
 				/* 需求物資描述 */
-				.wishGoodsDesc {
+				.exchangeGoodsDesc {
 					font-size: 18px;
 					margin-top: 100px;
 					padding: 10px;
 					text-align: center;
-					border: 2px solid $wishGoodsDesc;
-					color: $wishGoodsDesc;
+					border: 2px solid $exchangeGoodsDesc;
+					color: $exchangeGoodsDesc;
 					transition: 1s;
 				}
 				/* 滑鼠移至需求物資描述 */
-				.wishGoodsDesc:hover {
-					box-shadow: inset 0 0 0 2em $wishGoodsDesc;
+				.exchangeGoodsDesc:hover {
+					box-shadow: inset 0 0 0 2em $exchangeGoodsDesc;
 					color: #ffffff;
 					transition: 1s;
 				}

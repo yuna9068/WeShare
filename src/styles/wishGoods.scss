@@ -1,0 +1,34 @@
+div {
+    border: 1px dotted #87cefa;
+}
+
+#sectionWGoods {
+    padding-top: 30px;
+    min-height: calc(100vh - 306px);
+    /*  物資圖片 */
+    #WGoodsImgLayout {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 100%;
+        #WGoodsImg{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    /* 捐贈/詢問區塊 */
+    #blockGoodsDecide>ul {
+        margin: 0px;
+        padding: 20px;
+        >li {
+            display: inline-block;
+            width: 45%;
+            .btnDecide {
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+    }
+}
