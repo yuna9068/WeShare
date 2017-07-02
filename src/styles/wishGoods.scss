@@ -1,34 +1,80 @@
-div {
-    border: 1px dotted #87cefa;
-}
-
 #sectionWGoods {
-    padding-top: 30px;
-    min-height: calc(100vh - 306px);
-    /*  物資圖片 */
-    #WGoodsImgLayout {
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 100%;
-        #WGoodsImg{
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-        }
-    }
-    /* 捐贈/詢問區塊 */
-    #blockGoodsDecide>ul {
-        margin: 0px;
-        padding: 20px;
-        >li {
-            display: inline-block;
-            width: 45%;
-            .btnDecide {
-                width: 100%;
-                font-size: 20px;
-            }
-        }
-    }
+	padding: 30px 45px;
+	min-height: calc(100vh - 306px);
+	font-size: 20px;
+
+
+	/*  物資圖片 */
+	#WGoodsImgLayout {
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 100%;
+		margin: auto;
+		box-shadow: 0px 0px 20px 10px #e6e6e6;
+		#WGoodsImg{
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+
+
+	/* 捐贈&詢問按鈕 */
+	#blockGoodsOption{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		>ul {
+			margin: 0px;
+			padding: 20px;
+			>li {
+				display: inline-block;
+				.btOption {
+					border-radius: 0px;
+					width: 100%;
+					font-size: 20px;
+					&:hover {
+						background-color: white;
+						box-shadow: 0px 0px 20px 30px #ffffff;
+						animation: btSpread 1.5s;
+						@keyframes btSpread {
+							0% { box-shadow: 0px 0px 0px 0px darken(white, 5%); }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* 中間物資資訊 */
+	#WGoodsInfo {
+		color: #3e3e3e;
+		padding-left: 30px;
+		margin-bottom: 20px;
+		/* 欄位 */
+		.WGoodsCol {
+			padding-left: 10px;
+			font-size: 22px;
+		}
+		/* 值 */
+		.WGoodsVal {
+			margin-bottom: 20px;
+			padding-left: 10px;
+			text-indent: 2em;
+			border-bottom: 1px solid #bdbdbd;
+		}
+	}
+	/* 右邊詳細說明及簡介 */
+	#WGoodsOtherInfo {
+		color: #3e3e3e;
+		margin-bottom: 20px;
+		/* 內容 */
+		#WGoodsOtherInfoContent {
+			border: 1px solid #e0e0e0;
+			border-top: 0;
+			text-indent: 2em;
+			padding: 10px;
+		}
+	}
 }
