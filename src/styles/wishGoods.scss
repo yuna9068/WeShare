@@ -69,6 +69,15 @@
 	#WGoodsOtherInfo {
 		color: #3e3e3e;
 		margin-bottom: 20px;
+		#WGoodsOtherInfoTabs>li:active>a{
+			border-top:5px solid #ff9797;
+		}
+		#WGoodsOtherInfoTabs>li:active>a:hover{
+			border-top:5px solid #ff9797;
+		}
+		#WGoodsOtherInfoTabs>li:active>a:focus{
+			border-top:5px solid #ff9797;
+		}
 		/* 內容 */
 		#WGoodsOtherInfoContent {
 			border: 1px solid #e0e0e0;
