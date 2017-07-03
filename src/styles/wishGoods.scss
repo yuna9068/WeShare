@@ -2,16 +2,14 @@
 	padding: 30px 45px;
 	min-height: calc(100vh - 306px);
 	font-size: 20px;
-
-
 	/*  物資圖片 */
-	#WGoodsImgLayout {
+	#wGoodsImgLayout {
 		position: relative;
 		overflow: hidden;
 		padding-bottom: 100%;
 		margin: auto;
 		box-shadow: 0px 0px 20px 10px #e6e6e6;
-		#WGoodsImg{
+		#wGoodsImg {
 			position: absolute;
 			width: 100%;
 			top: 50%;
@@ -19,10 +17,8 @@
 			transform: translateX(-50%) translateY(-50%);
 		}
 	}
-
-
 	/* 捐贈&詢問按鈕 */
-	#blockGoodsOption{
+	#blockWGoodsOption {
 		margin-top: 20px;
 		margin-bottom: 20px;
 		>ul {
@@ -30,35 +26,37 @@
 			padding: 20px;
 			>li {
 				display: inline-block;
-				.btOption {
-					border-radius: 0px;
+				.wGoodsOption {
+					border-radius: 6px;
 					width: 100%;
 					font-size: 20px;
+					background-color: #ff9797;
+					color: #ffffff;
+					transition: 0.3s;
 					&:hover {
 						background-color: white;
-						box-shadow: 0px 0px 20px 30px #ffffff;
-						animation: btSpread 1.5s;
-						@keyframes btSpread {
-							0% { box-shadow: 0px 0px 0px 0px darken(white, 5%); }
-						}
+						color: #ff9797;
+						border-color: #ff9797;
+						box-shadow: 0px 15px 15px -10px #ff9797;
+						transform: translateY(-8px);
+						transition: 0.3s;
 					}
 				}
 			}
 		}
 	}
-
 	/* 中間物資資訊 */
-	#WGoodsInfo {
+	#wGoodsInfo {
 		color: #3e3e3e;
 		padding-left: 30px;
 		margin-bottom: 20px;
 		/* 欄位 */
-		.WGoodsCol {
+		.wGoodsCol {
 			padding-left: 10px;
 			font-size: 22px;
 		}
 		/* 值 */
-		.WGoodsVal {
+		.wGoodsVal {
 			margin-bottom: 20px;
 			padding-left: 10px;
 			text-indent: 2em;
@@ -66,23 +64,19 @@
 		}
 	}
 	/* 右邊詳細說明及簡介 */
-	#WGoodsOtherInfo {
+	#wGoodsOtherInfo {
 		color: #3e3e3e;
 		margin-bottom: 20px;
-		#WGoodsOtherInfoTabs li.active a{
-			border-top:5px solid #ff9797;
+		/* 項目 */
+		#wGoodsOtherInfoTabs li>a {
+			color: #3e3e3e;
+			border-top-width: 5px;
 		}
-		// #WGoodsOtherInfoTabs li:active a{
-		// 	border-top:5px solid #ff9797;
-		// }
-		// #WGoodsOtherInfoTabs li:active a:hover{
-		// 	border-top:5px solid #ff9797;
-		// }
-		// #WGoodsOtherInfoTabs li:active a:focus{
-		// 	border-top:5px solid #ff9797;
-		// }
+		#wGoodsOtherInfoTabs li.active a {
+			border-top: 5px solid #ff9797;
+		}
 		/* 內容 */
-		#WGoodsOtherInfoContent {
+		#wGoodsOtherInfoContent {
 			border: 1px solid #e0e0e0;
 			border-top: 0;
 			text-indent: 2em;

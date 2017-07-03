@@ -1,0 +1,75 @@
+#sectionWTrans {
+	padding: 30px 45px;
+	min-height: calc(100vh - 306px);
+	font-size: 20px;
+	/* 標題 */
+	#wTransTitle {
+		text-align: center;
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+	/*  物資圖片 */
+	#wTransImgLayout {
+		position: relative;
+		overflow: hidden;
+		padding-bottom: 100%;
+		margin: auto;
+		box-shadow: 0px 0px 20px 10px #e6e6e6;
+		#wTransImg {
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}	
+	/* 右邊物資資訊 */
+	#wTransInfo {
+		color: #3e3e3e;
+		padding-left: 30px;
+		margin-bottom: 20px;
+		/* 欄位 */
+		.wTransCol {
+			padding-left: 10px;
+			font-size: 22px;
+		}
+		/* 值 */
+		.wTransVal {
+			margin-bottom: 20px;
+			padding-left: 10px;
+			text-indent: 2em;
+			border-bottom: 1px solid #bdbdbd;
+			textarea {
+				resize: none;
+			}
+		}
+		/* 取消&確定按鈕 */
+		#blockWTransOption {
+			margin-top: 10px;
+			margin-bottom: 20px;
+			>ul {
+				margin: 0px;
+				padding: 10px;
+				>li {
+					display: inline-block;
+					.wTransOption {
+						border-radius: 0px;
+						width: 100%;
+						font-size: 20px;
+						background-color: #ffffff;
+						color: #ff9797;
+						border-color: #ff9797;
+						transition: 0.3s;
+						&:hover {
+							animation: spread 1s;
+							@keyframes spread {
+								0% {box-shadow: 0px 0px 0px 0px #ff9797;}
+								100% {box-shadow: 0px 0px 20px 30px #ffffff;}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

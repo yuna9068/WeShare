@@ -7,59 +7,65 @@
   /* 捐贈&詢問按鈕 */
   /* 中間物資資訊 */
   /* 右邊詳細說明及簡介 */ }
-  #sectionWGoods #WGoodsImgLayout {
+  #sectionWGoods #wGoodsImgLayout {
     position: relative;
     overflow: hidden;
     padding-bottom: 100%;
     margin: auto;
     box-shadow: 0px 0px 20px 10px #e6e6e6; }
-    #sectionWGoods #WGoodsImgLayout #WGoodsImg {
+    #sectionWGoods #wGoodsImgLayout #wGoodsImg {
       position: absolute;
       width: 100%;
       top: 50%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%); }
-  #sectionWGoods #blockGoodsOption {
+  #sectionWGoods #blockWGoodsOption {
     margin-top: 20px;
     margin-bottom: 20px; }
-    #sectionWGoods #blockGoodsOption > ul {
+    #sectionWGoods #blockWGoodsOption > ul {
       margin: 0px;
       padding: 20px; }
-      #sectionWGoods #blockGoodsOption > ul > li {
+      #sectionWGoods #blockWGoodsOption > ul > li {
         display: inline-block; }
-        #sectionWGoods #blockGoodsOption > ul > li .btOption {
-          border-radius: 0px;
+        #sectionWGoods #blockWGoodsOption > ul > li .wGoodsOption {
+          border-radius: 6px;
           width: 100%;
-          font-size: 20px; }
-          #sectionWGoods #blockGoodsOption > ul > li .btOption:hover {
+          font-size: 20px;
+          background-color: #ff9797;
+          color: #ffffff;
+          transition: 0.3s; }
+          #sectionWGoods #blockWGoodsOption > ul > li .wGoodsOption:hover {
             background-color: white;
-            box-shadow: 0px 0px 20px 30px #ffffff;
-            animation: btSpread 1.5s; }
-
-@keyframes btSpread {
-  0% {
-    box-shadow: 0px 0px 0px 0px #f2f2f2; } }
-  #sectionWGoods #WGoodsInfo {
+            color: #ff9797;
+            border-color: #ff9797;
+            box-shadow: 0px 15px 15px -10px #ff9797;
+            transform: translateY(-8px);
+            transition: 0.3s; }
+  #sectionWGoods #wGoodsInfo {
     color: #3e3e3e;
     padding-left: 30px;
     margin-bottom: 20px;
     /* 欄位 */
     /* 值 */ }
-    #sectionWGoods #WGoodsInfo .WGoodsCol {
+    #sectionWGoods #wGoodsInfo .wGoodsCol {
       padding-left: 10px;
       font-size: 22px; }
-    #sectionWGoods #WGoodsInfo .WGoodsVal {
+    #sectionWGoods #wGoodsInfo .wGoodsVal {
       margin-bottom: 20px;
       padding-left: 10px;
       text-indent: 2em;
       border-bottom: 1px solid #bdbdbd; }
-  #sectionWGoods #WGoodsOtherInfo {
+  #sectionWGoods #wGoodsOtherInfo {
     color: #3e3e3e;
     margin-bottom: 20px;
+    /* 項目 */
     /* 內容 */ }
-    #sectionWGoods #WGoodsOtherInfo #WGoodsOtherInfoTabs li.active a {
+    #sectionWGoods #wGoodsOtherInfo #wGoodsOtherInfoTabs li > a {
+      color: #3e3e3e;
+      border-top-width: 5px; }
+    #sectionWGoods #wGoodsOtherInfo #wGoodsOtherInfoTabs li.active a {
       border-top: 5px solid #ff9797; }
-    #sectionWGoods #WGoodsOtherInfo #WGoodsOtherInfoContent {
+    #sectionWGoods #wGoodsOtherInfo #wGoodsOtherInfoContent {
       border: 1px solid #e0e0e0;
       border-top: 0;
       text-indent: 2em;
