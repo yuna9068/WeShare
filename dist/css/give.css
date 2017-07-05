@@ -54,6 +54,7 @@
         /* 搜尋輸入框 */
         /* 搜尋鈕圖式 */ }
         #sectionGive #sectionFilter #sectionFilterContent #blockKWSearch #searchInput {
+          font-size: 18px;
           width: 150px;
           padding: 5px 5px 5px 40px;
           transition: .5s; }
@@ -93,7 +94,7 @@
             /* 條件選項按鈕 */ }
             #sectionGive #sectionFilter #sectionFilterContent .blockFilter .btFilterBlock > ul > li .btnFilterType {
               width: 100%;
-              font-size: 16px;
+              font-size: 18px;
               color: #f5f5f5; }
         #sectionGive #sectionFilter #sectionFilterContent .blockFilter #btBy {
           border-color: #ffb8b8; }

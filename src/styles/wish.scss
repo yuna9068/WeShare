@@ -62,6 +62,7 @@ $wishGoodsDesc:#337ab7;
 				margin: 10px 0 10px 0;
 				/* 搜尋輸入框 */
 				#searchInput {
+					font-size: 18px;
 					width: 150px;
 					padding: 5px 5px 5px 40px;
 					transition: .5s;
@@ -107,7 +108,7 @@ $wishGoodsDesc:#337ab7;
 						/* 條件選項按鈕 */
 						.btnFilterType {
 							width: 100%;
-							font-size: 16px;
+							font-size: 18px;
 							color: #f5f5f5;
 						}
 					}

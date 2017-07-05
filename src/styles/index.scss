@@ -139,7 +139,7 @@ body {
 	background-color: $sectionOverlayColor;
 	transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
 	color: $sectionTitleColor;
-	font-size: medium;
+	font-size: 24px;
 }
 
 
@@ -147,12 +147,6 @@ body {
 .itemImg {
 	margin: auto;
 	max-height: 100%;
-	@media screen and (min-width:768px) and (max-width:991px){
-		height: 330px;
-	}
-	@media screen and (max-width:767px){
-		height: 175px;
-	}
 }
 
 /* 物資文字樣式 */
@@ -169,18 +163,19 @@ body {
 		padding-bottom: 15px;
 	}
 	.itemName {
-		font-size: 13px;
-		padding: 15px 15px 15px 15px;
+		font-size: 24px;
+		padding: 15px 15px 5px 15px;
 		a {
 			color: $itemNameText;
 		}
 	}
 	.itemBy {
-		font-size: 17px;
-		padding: 15px 15px 40px 15px;
+		font-size: 18px;
+		padding: 5px 15px 10px 15px;
 		a {
 			color: $itemByText;
-			h6 span {
+			span>span {
+				font-size: 20px;
 				color: $itemByAuthorText;
 			}
 			h5 span {
