@@ -6,7 +6,7 @@ $classBg: #feb36b;
 $locBg: #b25cc1;
 $exchangeGoods: #f8f7f7;
 $exchangeGoodsByText: #543939;
-$exchangeGoodsByTextMonth: #01B468;
+$exchangeGoodsByAuthor: #01B468;
 $exchangeGoodsNameText: #888888;
 $sectionFilter: #e9ead5;
 $iconFilter:#01B468;
@@ -246,13 +246,18 @@ $exchangeGoodsDesc:#337ab7;
 				}
 				/* 需求物資名稱 */
 				.exchangeGoodsName {
+					color: $exchangeGoodsNameText;
 					font-size: 22px;
 					padding-left: 10px;
 				}
 				/* 需求物資發佈者 */
 				.exchangeGoodsBy {
+					color: $exchangeGoodsByText;
 					font-size: 18px;
 					padding-left: 10px;
+					.exchangeGoodsByAuthor{
+						color: $exchangeGoodsByAuthor;
+					}
 				}
 				/* 需求物資描述 */
 				.exchangeGoodsDesc {

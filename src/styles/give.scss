@@ -6,7 +6,7 @@ $classBg: #feb36b;
 $locBg: #b25cc1;
 $giveGoods: #f8f7f7;
 $giveGoodsByText: #543939;
-$giveGoodsByTextMonth: #01B468;
+$giveGoodsByAuthor: #01B468;
 $giveGoodsNameText: #888888;
 $sectionFilter: #f9e8d7;
 $iconFilter:#ef7b00;
@@ -246,13 +246,18 @@ $giveGoodsDesc:#337ab7;
 				}
 				/* 需求物資名稱 */
 				.giveGoodsName {
+					color: $giveGoodsNameText;
 					font-size: 22px;
 					padding-left: 10px;
 				}
 				/* 需求物資發佈者 */
 				.giveGoodsBy {
+					color: $giveGoodsByText;
 					font-size: 18px;
 					padding-left: 10px;
+					.giveGoodsByAuthor{
+						color: $giveGoodsByAuthor;
+					}
 				}
 				/* 需求物資描述 */
 				.giveGoodsDesc {

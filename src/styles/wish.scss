@@ -6,7 +6,7 @@ $classBg: #feb36b;
 $locBg: #b25cc1;
 $wishGoods: #f8f7f7;
 $wishGoodsByText: #543939;
-$wishGoodsByTextMonth: #01B468;
+$wishGoodsByAuthor: #01B468;
 $wishGoodsNameText: #888888;
 $sectionFilter: #fff4f4;
 $iconFilter:#ff9797;
@@ -246,13 +246,18 @@ $wishGoodsDesc:#337ab7;
 				}
 				/* 需求物資名稱 */
 				.wishGoodsName {
+					color: $wishGoodsNameText;
 					font-size: 22px;
 					padding-left: 10px;
 				}
 				/* 需求物資發佈者 */
 				.wishGoodsBy {
+					color: $wishGoodsByText;
 					font-size: 18px;
 					padding-left: 10px;
+					.wishGoodsByAuthor{
+						color: $wishGoodsByAuthor;
+					}
 				}
 				/* 需求物資描述 */
 				.wishGoodsDesc {
