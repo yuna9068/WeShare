@@ -1,20 +1,21 @@
 {
-	"name": "WeShare",
-	"description": "",
-	"main": "index.js",
-	"authors": [
-		"Yuna"
-	],
-	"license": "MIT",
-	"homepage": "https://github.com/TpWILovePanda/frontend-starter-kit",
-	"ignore": [
-		"**/.*",
-		"node_modules",
-		"bower_components",
-		"test",
-		"tests"
-	],
-	"dependencies": {
-		"bootstrap": "^3.3.7"
-	}
+  "name": "WeShare",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Yuna"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/TpWILovePanda/frontend-starter-kit",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "animate.css": "^3.5.2"
+  }
 }

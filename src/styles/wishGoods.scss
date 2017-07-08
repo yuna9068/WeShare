@@ -5,10 +5,27 @@
 	/*  物資圖片 */
 	#wGoodsImgLayout {
 		position: relative;
-		overflow: hidden;
 		padding-bottom: 100%;
-		margin: auto;
-		box-shadow: 0px 0px 20px 10px #e6e6e6;
+		margin: 0 auto 40px;
+		animation-delay: .1s;
+		&::before, &::after {
+			z-index: -1;
+			position: absolute;
+			content: '';
+			bottom: 10px;
+			left: 10px;
+			width: 50%;
+			top: 80%;
+			max-width: 100%;
+			background: #8d8c8c;
+			box-shadow: 0 15px 10px #8d8c8c;
+		}
+		&::before {
+			transform: rotate(-5deg);
+		}
+		&::after {
+			transform: rotate(5deg);
+		}
 		#wGoodsImg {
 			position: absolute;
 			width: 100%;
@@ -21,21 +38,25 @@
 	#blockWGoodsOption {
 		margin-top: 20px;
 		margin-bottom: 20px;
+		animation-delay: .2s;
 		>ul {
 			margin: 0px;
 			padding: 20px;
 			>li {
 				display: inline-block;
+				&:first-child {
+					margin-bottom: 20px;
+				}
 				.wGoodsOption {
 					border-radius: 6px;
 					width: 100%;
 					font-size: 20px;
-					background-color: #ff9797;
+					background-color: #fe5c5c;
 					color: #ffffff;
 					transition: 0.3s;
 					&:hover {
 						background-color: white;
-						color: #ff9797;
+						color: #fe5c5c;
 						border-color: #ff9797;
 						box-shadow: 0px 15px 15px -10px #ff9797;
 						transform: translateY(-8px);
@@ -45,11 +66,10 @@
 			}
 		}
 	}
-	/* 中間物資資訊 */
+	/* 物資資訊 */
 	#wGoodsInfo {
 		color: #3e3e3e;
-		padding-left: 30px;
-		margin-bottom: 20px;
+		animation-delay: .3s;
 		/* 欄位 */
 		.wGoodsCol {
 			padding-left: 10px;
@@ -63,10 +83,11 @@
 			border-bottom: 1px solid #bdbdbd;
 		}
 	}
-	/* 右邊詳細說明及簡介 */
+	/* 詳細說明及簡介 */
 	#wGoodsOtherInfo {
 		color: #3e3e3e;
 		margin-bottom: 20px;
+		animation-delay: .4s;
 		/* 項目 */
 		#wGoodsOtherInfoTabs li>a {
 			color: #3e3e3e;

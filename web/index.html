@@ -29,8 +29,8 @@
 	<script src="../dist/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<!-- Holder Background -->
 	<script src="//cdn.jsdelivr.net/holder/2.9.4/holder.min.js"></script>
-	<!-- Background Cover -->
-	<!--<script src="//cdn.jsdelivr.net/jquery.backgroundcover/0.0.4/backgroundcover.min.js"></script>-->
+	<!-- 截圖插件 -->
+	<script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 	<!-- 個人化 -->
 	<script src="../dist/js/bundle.js"></script>
 	<script src="../dist/js/login.js"></script>
@@ -106,7 +106,7 @@
 							<li><a href="#">物資箱</a></li>
 							<li><a href="#">站內信</a></li>
 							<li class="divider"></li>
-                    		<li><a data-toggle="modal" data-target="#logoutMsg">登出</a></li>
+							<li><a data-toggle="modal" data-target="#logoutMsg">登出</a></li>
 						</ul>
 					</li>
 					<li class="afterLogin">
@@ -152,7 +152,7 @@
 					<div class="modal-footer">
 						<a href="../index.html" type="button" class="btn btn-default">關閉視窗</a>
 					</div>
-				</div>      
+				</div>
 			</div>
 		</div>
 	</header>
@@ -503,6 +503,16 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<!-- 擷取畫面按鈕 -->
+		<button id="imgGet" type="button" class="btn btn-primary">擷取畫面</button>
+
+		<!-- 擷取畫面輸出框 -->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div id="imgCanvas"></div>
 			</div>
 		</div>
 	</section>

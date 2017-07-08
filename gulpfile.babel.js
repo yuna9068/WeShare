@@ -29,7 +29,7 @@ const scriptsPaths = {
 };
 
 const imagesPaths = {
-	src: `${dirs.src}/images/*`,
+	src: `${dirs.src}/images/**/*`,
 	dest: `${dirs.dest}/img`
 };
 
@@ -42,7 +42,7 @@ gulp.task('styles', () => {
 });
 
 // 編譯 JavaScript 轉譯、合併、壓縮任務，完成後送到 dist/js/bundle.js
-gulp.task('scripts', function () {
+gulp.task('scripts', () => {
 	return browserify({
 			entries: ['./src/scripts/main.js']
 		})
@@ -82,6 +82,6 @@ gulp.task('watch', function () {
 	gulp.watch(imagesPaths.src, ['images']);
 });
 
-// 兩種任務類型，第一種會啟動 server
-gulp.task('default', ['scripts', 'styles', 'images', 'server', 'watch']);
+// 兩種任務類型，第一種會啟動 server，第二種會編譯並壓縮 Js/Scss/Img
+gulp.task('default', ['scripts', 'styles', 'server', 'watch']);
 gulp.task('build', ['scripts', 'styles', 'images']);
