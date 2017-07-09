@@ -139,7 +139,7 @@
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 							<!-- 物資圖片 -->
 							<div id="wGoodsImgLayout" class="animated fadeInLeft">
-								<img id="wGoodsImg" class="img-responsive" src="../dist/img/300x300/20170627_66.png">
+								<img id="wGoodsImg" class="img-responsive" src="../dist/img/300x300/20170627_49.png">
 							</div>
 							<!-- 捐贈&詢問按鈕區 -->
 							<div id="blockWGoodsOption" class="animated fadeInLeft">
@@ -148,9 +148,29 @@
 										<a href="wishTrans.html" class="btn btn-default wGoodsOption" >我要捐贈</a>
 									</li>
 									<li class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-										<a href="#" class="btn btn-default wGoodsOption" >留言詢問</a>
+										<a data-toggle="modal" data-target="#sendMsg" class="btn btn-default wGoodsOption" >留言詢問</a>
 									</li>
 								</ul>
+							</div>
+							<!-- 留言詢問 -->
+							<div id="sendMsg" class="modal fade" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<!-- 標題 -->
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">留言詢問</h4>
+										</div>
+										<!-- 內容 -->
+										<div class="modal-body">
+											<textarea class="form-control" rows="5" required="required" maxlength="200" placeholder="留言最多200字" style="resize : none;"></textarea>
+										</div>
+										<!-- 關閉鈕 -->
+										<div class="modal-footer">
+											<a href="server" type="button" class="btn btn-default">傳送訊息</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -309,5 +329,7 @@
 			</div>
 		</div>
 	</footer>
+
+
 </body>
 </html>

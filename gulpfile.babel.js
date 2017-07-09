@@ -79,7 +79,7 @@ gulp.task('server', function () {
 gulp.task('watch', function () {
 	gulp.watch(stylesPaths.src, ['styles']);
 	gulp.watch(scriptsPaths.src, ['scripts']);
-	gulp.watch(imagesPaths.src, ['images']);
+	// gulp.watch(imagesPaths.src, ['images']);
 });
 
 // 兩種任務類型，第一種會啟動 server，第二種會編譯並壓縮 Js/Scss/Img

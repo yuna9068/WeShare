@@ -1,12 +1,12 @@
+$btOrgGoodsColor:#ff3333;
+
 #sectionOrg {
 	min-height: calc(100vh - 306px);
 	font-size: 22px;
 	padding-top: 30px;
-	div {
-		backface-visibility: hidden;
-	}
 	/* 篩選器 */
 	#sectionOrgFilter {
+		margin-bottom: 30px;
 		/* 關鍵字搜尋 */
 		#blockKWSearch {
 			position: relative;
@@ -15,7 +15,6 @@
 			#searchInput {
 				font-size: 18px;
 				padding: 5px 5px 5px 40px;
-				transition: .5s;
 			}
 			/* 搜尋鈕圖式 */
 			#btKWSearch {
@@ -45,14 +44,13 @@
 	}
 	/* 社福團體簡介 */
 	#sectionOrgAbout {
-		margin-top: 30px;
 		/* 社福團體簡介第一筆 */
-		#rowOrg {
-			width: 1150px;
+		.rowOrg {
+			width: 1130px;
 			height: 600px;
-			perspective: 1600px;
+			perspective: 2000px;
 			/* 上層翻轉列 */
-			#rowUpper {
+			.rowUpper {
 				position: relative;
 				width: 550px;
 				height: 550px;
@@ -108,30 +106,33 @@
 					vertical-align: top;
 				}
 				/* 圖片 */
-				#orgImgLayout {
-					position: relative;
+				.orgImgLayout {
+					position: absolute;
 					overflow: hidden;
 					padding-bottom: 100%;
-					#orgImg {
+					.orgImg {
 						position: absolute;
 						width: 100%;
 						top: 50%;
 						left: 50%;
 						transform: translateX(-50%) translateY(-50%);
+						backface-visibility: hidden;
 					}
+					backface-visibility: hidden;
 				}
 				/* 地圖 */
-				#orgMap {
+				.orgMap {
 					transform: rotateY(180deg);
 					background-color: #eeeeee;
 					width: 550px;
 					height: 550px;
 					max-width: 100%;
 					padding-bottom: 100%;
+					backface-visibility: hidden;
 				}
 			}
 			/* 下層固定列 */
-			#rowLower {
+			.rowLower {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -144,8 +145,8 @@
 					vertical-align: top;
 				}
 				/* 聯絡資訊 */
-				#orgContact {
-					#orgContactList {
+				.orgContact {
+					.orgContactList {
 						margin-top: 60px;
 						li {
 							color: #666666;
@@ -159,29 +160,30 @@
 							}
 						}
 					}
-					/* 查看募集物資 */
-					#orgGoods {
+					/* 查看募集物資連結 */
+					.orgGoods {
 						font-size: 25px;
 						margin: 30px;
-						width: 80%;
-						border-color: #ff3333;
-						color: #ff3333;
+						border-color: $btOrgGoodsColor;
+						color: $btOrgGoodsColor;
+						letter-spacing: 2px;
 						&:hover {
-							box-shadow: inset 20em 0 0 0 #ff3333;
+							box-shadow: inset 180px 0 0 0 $btOrgGoodsColor;
 							color: #ffffff;
 							transition: 1s;
+							background-color: #ffffff;
 						}
 					}
 				}
 				/* 簡介 */
-				#orgInfo {
+				.orgInfo {
 					color: #666666;
 					letter-spacing: 2px;
 					margin-left: -4px;
-					#orgInfoList {
+					.orgInfoList {
 						margin-top: 60px;
 						/* 社福團體名稱 */
-						#orgName {
+						.orgName {
 							text-align: center;
 							font-size: 30px;
 							margin-top: 10px;

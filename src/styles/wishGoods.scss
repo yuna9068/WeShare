@@ -13,7 +13,6 @@
 			position: absolute;
 			content: '';
 			bottom: 10px;
-			left: 10px;
 			width: 50%;
 			top: 80%;
 			max-width: 100%;
@@ -21,9 +20,11 @@
 			box-shadow: 0 15px 10px #8d8c8c;
 		}
 		&::before {
+			left: 10px;
 			transform: rotate(-5deg);
 		}
 		&::after {
+			right: 10px;
 			transform: rotate(5deg);
 		}
 		#wGoodsImg {
@@ -81,6 +82,7 @@
 			padding-left: 10px;
 			text-indent: 2em;
 			border-bottom: 1px solid #bdbdbd;
+			letter-spacing: 2px;
 		}
 	}
 	/* 詳細說明及簡介 */
@@ -88,6 +90,7 @@
 		color: #3e3e3e;
 		margin-bottom: 20px;
 		animation-delay: .4s;
+		letter-spacing: 2px;
 		/* 項目 */
 		#wGoodsOtherInfoTabs li>a {
 			color: #3e3e3e;
