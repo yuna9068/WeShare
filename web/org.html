@@ -388,9 +388,10 @@
 
 	<script>
 		// 點下層固定列，翻轉上層翻轉列
-		$(".rowLower").click(function () {
-			$(this).closest('.rowOrg').find('.rowUpper').toggleClass('rotate180');
-			// $(this).closest('.rowOrg').find('.rowUpper').css('zIndex', 300);
+		$(function(){
+			$(".rowLower").click(function () {
+				turnPage($(this));
+			});
 		});
 	</script>
 
