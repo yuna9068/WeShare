@@ -101,7 +101,7 @@
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
             backface-visibility: hidden; }
-        #sectionOrg #sectionOrgAbout .rowOrg .rowUpper .orgMap {
+        #sectionOrg #sectionOrgAbout .rowOrg .rowUpper .orgMap, #sectionOrg #sectionOrgAbout .rowOrg .rowUpper .orgMap1, #sectionOrg #sectionOrgAbout .rowOrg .rowUpper .orgMap2 {
           transform: rotateY(180deg);
           background-color: #eeeeee;
           width: 550px;

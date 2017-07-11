@@ -121,7 +121,7 @@ $btOrgGoodsColor:#ff3333;
 					backface-visibility: hidden;
 				}
 				/* 地圖 */
-				.orgMap {
+				.orgMap, .orgMap1, .orgMap2 {
 					transform: rotateY(180deg);
 					background-color: #eeeeee;
 					width: 550px;
