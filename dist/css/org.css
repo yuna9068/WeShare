@@ -101,14 +101,21 @@
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
             backface-visibility: hidden; }
-        #sectionOrg #sectionOrgAbout .rowOrg .rowUpper .orgMap, #sectionOrg #sectionOrgAbout .rowOrg .rowUpper .orgMap1, #sectionOrg #sectionOrgAbout .rowOrg .rowUpper .orgMap2 {
+        #sectionOrg #sectionOrgAbout .rowOrg .rowUpper .orgMap {
           transform: rotateY(180deg);
           background-color: #eeeeee;
           width: 550px;
           height: 550px;
           max-width: 100%;
           padding-bottom: 100%;
-          backface-visibility: hidden; }
+          backface-visibility: hidden;
+          overflow: hidden; }
+          #sectionOrg #sectionOrgAbout .rowOrg .rowUpper .orgMap .iframeMap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; }
       #sectionOrg #sectionOrgAbout .rowOrg .rowLower {
         position: absolute;
         top: 0;

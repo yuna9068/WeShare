@@ -121,7 +121,7 @@ $btOrgGoodsColor:#ff3333;
 					backface-visibility: hidden;
 				}
 				/* 地圖 */
-				.orgMap, .orgMap1, .orgMap2 {
+				.orgMap {
 					transform: rotateY(180deg);
 					background-color: #eeeeee;
 					width: 550px;
@@ -129,6 +129,14 @@ $btOrgGoodsColor:#ff3333;
 					max-width: 100%;
 					padding-bottom: 100%;
 					backface-visibility: hidden;
+					overflow: hidden;
+					.iframeMap {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
 				}
 			}
 			/* 下層固定列 */
