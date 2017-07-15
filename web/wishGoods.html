@@ -148,7 +148,7 @@
 										<a href="wishTrans.html" class="btn btn-default wGoodsOption" >我要捐贈</a>
 									</li>
 									<li class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-										<a data-toggle="modal" data-target="#sendMsg" class="btn btn-default wGoodsOption" >留言詢問</a>
+										<a id="aAsk" data-toggle="modal" data-target="#sendMsg" class="btn btn-default wGoodsOption" >留言詢問</a>
 									</li>
 								</ul>
 							</div>
@@ -159,15 +159,17 @@
 										<!-- 標題 -->
 										<div class="modal-header">
 											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">留言詢問</h4>
+											<h3 class="modal-title">留言詢問</h3>
 										</div>
 										<!-- 內容 -->
 										<div class="modal-body">
-											<textarea class="form-control" rows="5" required="required" maxlength="200" placeholder="留言最多200字" style="resize : none;"></textarea>
+											<textarea id="msgText" class="form-control" rows="5" required="required" maxlength="200" placeholder="留言最多200字" style="resize : none;"></textarea>
+											<input id="msgImg" type="file" accept="image/*">
 										</div>
 										<!-- 關閉鈕 -->
 										<div class="modal-footer">
-											<a href="server" type="button" class="btn btn-default">傳送訊息</a>
+											<button id="btSendMsg" type="button" class="btn btn-default disabled">傳送訊息</button>
+											<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
 										</div>
 									</div>
 								</div>
@@ -330,6 +332,20 @@
 		</div>
 	</footer>
 
+	<script>
+		// 判斷是否有輸入文字，有字才可以點傳送
+		$('#msgText').keyup(function(){
+			if($(this).val() !== ""){
+				$('#btSendMsg').removeClass('disabled');
+			} else {
+				$('#btSendMsg').addClass('disabled');
+			}
+		});
+
+		$('#btSendMsg').click(function(){
+			console.log("btSendMsg click");
+		});
+	</script>
 
 </body>
 </html>

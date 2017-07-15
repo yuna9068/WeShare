@@ -839,6 +839,11 @@
 				},200 * e);
 			});
 		}
+
+		// 滑動選單的開閉按鈕設定, 點擊新增 .active 
+		$('#slideMenuTrigger').on('click', function() {
+			$('#sectionFilter').toggleClass("active");
+		});
 	</script>
 
 </body>

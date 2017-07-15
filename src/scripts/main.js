@@ -1,15 +1,15 @@
 $(function(){
 	// wish.html 滑動選單的開閉按鈕設定, 點擊新增 .active 
-	$('#slideMenuTrigger').on('click', function() {
-		$('#sectionFilter').toggleClass("active");
-	});
+	// $('#slideMenuTrigger').on('click', function() {
+	// 	$('#sectionFilter').toggleClass("active");
+	// });
 
 	// 擷取畫面 https://github.com/niklasvh/html2canvas
 	$('#imgGet').click(function (e) {
 		// document.body 要擷取畫面的範圍
 		html2canvas(document.body).then(function(canvas) {
 			// canvas: 回傳的 canvas 截取畫面
-			// $('#imgCanvas').html(canvas);
+			$('#imgCanvas').html(canvas);
 			/**
 			 * 使用 jQuery 選取 thisImg, thisImg 選取是jQuery 物件, 不是 DOM 物件,
 			 * 所以要用 thisImg[0] 選到 jQuery 裡面的 DOM 物件, 才可使用 .toDataURL() 轉換成
@@ -18,6 +18,7 @@ $(function(){
 			 */
 			var thisImg = $('#imgCanvas canvas');
 			var mediumQuality = thisImg[0].toDataURL("image/jpeg");
+			localStorage.setItem('transImg', mediumQuality);
 		});
 	});
 

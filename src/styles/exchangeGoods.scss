@@ -35,7 +35,7 @@
 			transform: translateX(-50%) translateY(-50%);
 		}
 	}
-	/* 捐贈&詢問按鈕 */
+	/* 交換&詢問按鈕 */
 	#blockEGoodsOption {
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -67,6 +67,18 @@
 			}
 		}
 	}
+	/* 留言詢問modal */
+	#sendMsg {
+		#msgText, button {
+			font-size: 18px;
+			margin: 5px;
+		}
+		#msgImg {
+			font-size: 16px;
+			margin: 5px;
+		}
+	}
+
 	/* 物資資訊 */
 	#eGoodsInfo {
 		color: #3e3e3e;

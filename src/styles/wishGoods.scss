@@ -67,6 +67,18 @@
 			}
 		}
 	}
+	/* 留言詢問modal */
+	#sendMsg {
+		#msgText, button {
+			font-size: 18px;
+			margin: 5px;
+		}
+		#msgImg {
+			font-size: 16px;
+			margin: 5px;
+		}
+	}
+
 	/* 物資資訊 */
 	#wGoodsInfo {
 		color: #3e3e3e;
