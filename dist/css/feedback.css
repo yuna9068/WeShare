@@ -1,0 +1,15 @@
+#sectionFeedback {
+  font-size: 18px; }
+  #sectionFeedback #blockFeedback {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0 0 10px 1px black; }
+    #sectionFeedback #blockFeedback #thisMember {
+      margin-bottom: 5%; }
+      #sectionFeedback #blockFeedback #thisMember #thisMemberImgLayout {
+        margin-bottom: 5%; }
+        #sectionFeedback #blockFeedback #thisMember #thisMemberImgLayout thisMemberImg {
+          background: cadetblue; }
+    #sectionFeedback #blockFeedback .otherMember .otherMemberImgLayout .otherMemberImg {
+      width: 64px;
+      background: cadetblue; }
