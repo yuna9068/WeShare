@@ -115,6 +115,7 @@ $btOrgGoodsColor:#ff3333;
 					position: absolute;
 					overflow: hidden;
 					padding-bottom: 100%;
+					background-color: #fff;
 					.orgImg {
 						position: absolute;
 						width: 100%;
@@ -161,6 +162,7 @@ $btOrgGoodsColor:#ff3333;
 				.orgContact {
 					.orgContactList {
 						margin-top: 60px;
+						word-break: break-all;
 						li {
 							color: #666666;
 							letter-spacing: 2px;
