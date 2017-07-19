@@ -165,7 +165,7 @@
 						<!-- 回上一頁 -->
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<div id="btBack" class="btn btn-default"><i class="fa fa-reply" aria-hidden="true"></i>回上一頁</div>
+								<a href="javascript:history.back()" id="aBack" class="btn btn-default"><i class="fa fa-reply" aria-hidden="true"></i>回上一頁</a>
 							</div>
 						</div>
 						<!-- 會員資料 -->
@@ -185,9 +185,9 @@
 										</div>
 										<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
 											<!-- 會員分數 -->
-											<div id="thisMemberScore" class="progress-pie-chart" data-percent="60">
+											<div id="thisMemberScore">
 												<canvas id="blockCanvas" width="229" height="229"></canvas>
-												<div id="score">7.0</div>
+												<div id="score">7.0分</div>
 											</div>
 										</div>
 									</div>
@@ -198,7 +198,55 @@
 						<div class="row">
 							<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
 								<div class="otherMember">
-									<div class="media">
+									<div class="media blockMedia">
+										<div class="media-left">
+											<!-- 給評者圖片 -->
+											<div class="otherMemberImgLayout">
+												<img class="media-object img-circle otherMemberImg" src="/dist/img/icon_member1.png">
+											</div>
+										</div>
+										<div class="media-body">
+											<!-- 給評者姓名 -->
+											<h4 class="media-heading otherMemberName">會員姓名</h4>
+											<!-- 給評者評分 -->
+											<div class="star-ratings otherMemberScore">
+												<span><i class="fa fa-star" aria-hidden="true"></i></span>
+												<span><i class="fa fa-star" aria-hidden="true"></i></span>
+												<span><i class="fa fa-star" aria-hidden="true"></i></span>
+												<span><i class="fa fa-star-half-o" aria-hidden="true"></i></span>
+												<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+											</div>
+											<!-- 給評者評語 -->
+											<p class="otherMemberFeedback">評價內容</p>
+											<!-- 給評日期 -->
+											<h5 class="feedbackDate">給評日期</h5>
+										</div>
+									</div>
+									<div class="media blockMedia">
+										<div class="media-left">
+											<!-- 給評者圖片 -->
+											<div class="otherMemberImgLayout">
+												<img class="media-object img-circle otherMemberImg" src="/dist/img/icon_member1.png">
+											</div>
+										</div>
+										<div class="media-body">
+											<!-- 給評者姓名 -->
+											<h4 class="media-heading otherMemberName">會員姓名</h4>
+											<!-- 給評者評分 -->
+											<div class="star-ratings otherMemberScore">
+												<span><i class="fa fa-star" aria-hidden="true"></i></span>
+												<span><i class="fa fa-star" aria-hidden="true"></i></span>
+												<span><i class="fa fa-star" aria-hidden="true"></i></span>
+												<span><i class="fa fa-star-half-o" aria-hidden="true"></i></span>
+												<span><i class="fa fa-star-o" aria-hidden="true"></i></span>
+											</div>
+											<!-- 給評者評語 -->
+											<p class="otherMemberFeedback">評價內容</p>
+											<!-- 給評日期 -->
+											<h5 class="feedbackDate">給評日期</h5>
+										</div>
+									</div>
+									<div class="media blockMedia">
 										<div class="media-left">
 											<!-- 給評者圖片 -->
 											<div class="otherMemberImgLayout">

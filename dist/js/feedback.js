@@ -27,7 +27,7 @@ function showStars(e) {
 }
 
 $(function () {
-	scoreCircle(9 * 36);
+	scoreCircle(7 * 36);
 });
 
 
@@ -35,20 +35,41 @@ function scoreCircle(e) {
 	var w = $('#blockCanvas').width();
 	var h = $('#blockCanvas').height();
 	console.log("w = " + w + ", h = " + h);
-	console.log("w/2 = " + (w / 2) + ", h/2 = " + (h / 2));
 	// 取得繪圖環境
 	var scoreCircle = $('#blockCanvas')[0].getContext('2d');
-	// 清空繪圖環境
-	// scoreCircle.clearRect(0, 0, w, h)
-	// 設定顏色
-	scoreCircle.strokeStyle = '#87cefa';
-	// 設定線寬跟兩端樣式
-	scoreCircle.lineWidth = 10;
-	scoreCircle.lineCap = "round";
-	// 開始一條路徑或重製當前的路徑
-	scoreCircle.beginPath();
-	// 畫圓
-	scoreCircle.arc(w / 2, h / 2, w / 4, 0, e * Math.PI / 180, false);
-	// 結束
-	scoreCircle.stroke();
+	// 起始數值
+	var curPerc = 0;
+	// 結束數值
+	var endPercent = e;
+	
+	// 底部灰圈
+	scoreCircle.strokeStyle = '#ececec';
+    scoreCircle.lineWidth = 10;
+    scoreCircle.beginPath();
+    scoreCircle.arc(w / 2, h / 2, w / 4, 0, 2 * Math.PI, false);
+    scoreCircle.stroke();
+
+	function animate(x){
+		// 清空繪圖環境
+		// scoreCircle.clearRect(0, 0, w, h)
+		// 設定顏色
+		scoreCircle.strokeStyle = '#87cefa';
+		// 設定線寬跟兩端樣式
+		scoreCircle.lineWidth = 10;
+		// 開始一條路徑或重製當前的路徑
+		scoreCircle.beginPath();
+		// 畫圓
+		scoreCircle.arc(w / 2, h / 2, w / 4, 0, x * Math.PI / 180, false);
+		// 結束
+		scoreCircle.stroke();
+		// curPerc每次加3
+	    curPerc+=3;
+	    // 若curPerc沒大於endPercent，繼續執行animate()
+	    if (curPerc <= endPercent) {
+	        requestAnimationFrame(function () {
+	          animate(curPerc);
+	        });
+	    }
+	}
+	animate();
 }

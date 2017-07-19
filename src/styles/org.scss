@@ -182,6 +182,7 @@ $btOrgGoodsColor:#ff3333;
 						border-color: $btOrgGoodsColor;
 						color: $btOrgGoodsColor;
 						letter-spacing: 2px;
+						transition: 1s;
 						&:hover {
 							box-shadow: inset 180px 0 0 0 $btOrgGoodsColor;
 							color: #ffffff;
