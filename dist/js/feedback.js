@@ -1,39 +1,54 @@
-// 2.7分 2星 1半星 2空星
-// 3.0分 3星 0半星 2空星
-// 3.5分 3星 1半星 1空星
-// 3.9分 3星 1半星 1空星
-// 4.0分 4星 0半星 1空星
-// 4.2分 4星 1半星 0空星
-
-function starSetArry(starScore) {
-	var starTotal = 5;
-	var starArry = [];
-	var starString = "";
-	// 0: 空星, 1: 半星, 2: 實星
-	for (var i = 0; i < starTotal; i++) {
-		if (starScore >= 1) {
-			starScore = starScore - 1;
-			starArry[i] = 2;
-			starString += `<span><i class="fa fa-star" aria-hidden="true"></i></span>`;
-		} else if (0 < starScore && starScore < 1) {
-			starScore = starScore - starScore;
-			starArry[i] = 1;
-			starString += `<span><i class="fa fa-star-half-o" aria-hidden="true"></i></span>`;
-		} else if (starScore == 0) {
-			starArry[i] = 0;
-			starString += `<span><i class="fa fa-star-o" aria-hidden="true"></i></span>`;
-		}
+function showStars(e) {
+	// 計算全星的數量
+	var star = Math.floor(e / 2);
+	// 計算半星的數量
+	// var starHalf = Math.ceil(e % 2);
+	var starHalf = 0;
+	if ((e % 2) !== 0) {
+		starHalf = 1;
 	}
-	console.log(starArry);
+	// 計算空星的數量
+	var starO = 5 - star - starHalf;
+
+	var starString = "";
+	// 產生全星
+	for (var i = 0; i < star; i++) {
+		starString += `<span><i class="fa fa-star" aria-hidden="true"></i></span>`;
+	}
+	// 產生半星
+	for (var i = 0; i < starHalf; i++) {
+		starString += `<span><i class="fa fa-star-half-o" aria-hidden="true"></i></span>`;
+	}
+	// 產生空星
+	for (var i = 0; i < starO; i++) {
+		starString += `<span><i class="fa fa-star-o" aria-hidden="true"></i></span>`;
+	}
+	$('#otherMemberScore').append(starString);
 }
 
 $(function () {
-	var $ppc = $('.progress-pie-chart'),
-		percent = parseInt($ppc.data('percent')),
-		deg = 360 * percent / 100;
-	if (percent > 50) {
-		$ppc.addClass('gt-50');
-	}
-	$('.ppc-progress-fill').css('transform', 'rotate(' + deg + 'deg)');
-	$('.ppc-percents span').html(percent + '%');
+	scoreCircle(9 * 36);
 });
+
+
+function scoreCircle(e) {
+	var w = $('#blockCanvas').width();
+	var h = $('#blockCanvas').height();
+	console.log("w = " + w + ", h = " + h);
+	console.log("w/2 = " + (w / 2) + ", h/2 = " + (h / 2));
+	// 取得繪圖環境
+	var scoreCircle = $('#blockCanvas')[0].getContext('2d');
+	// 清空繪圖環境
+	// scoreCircle.clearRect(0, 0, w, h)
+	// 設定顏色
+	scoreCircle.strokeStyle = '#87cefa';
+	// 設定線寬跟兩端樣式
+	scoreCircle.lineWidth = 10;
+	scoreCircle.lineCap = "round";
+	// 開始一條路徑或重製當前的路徑
+	scoreCircle.beginPath();
+	// 畫圓
+	scoreCircle.arc(w / 2, h / 2, w / 4, 0, e * Math.PI / 180, false);
+	// 結束
+	scoreCircle.stroke();
+}
