@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* 訂單狀態選項 */
+#btStatusAll {
+  margin: 20px; }
+  #btStatusAll .btStatusStyle {
+    width: 100%;
+    font-size: 20px;
+    text-align: center; }
+
+/* 訂單區塊 */
+#dealContent {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  /* 每筆訂單 */ }
+  #dealContent > div:last-child .dealEach {
+    border-bottom: 2px dashed #1EC0FF; }
+  #dealContent .dealEach {
+    padding: 10px;
+    border: 2px dashed #1EC0FF;
+    border-bottom: 0px;
+    /* 訂單資訊 */
+    /* 訂單快照 */
+    /* 訂單其他資訊 */
+    /* 訂單確認 */ }
+    #dealContent .dealEach .dealInfo li {
+      margin-top: 3px;
+      margin-bottom: 3px; }
+      #dealContent .dealEach .dealInfo li span {
+        margin-left: 5px; }
+    #dealContent .dealEach .dealImageLayout {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 100%; }
+      #dealContent .dealEach .dealImageLayout .dealImage {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%); }
+    #dealContent .dealEach .dealOtherInfo li {
+      margin-top: 3px;
+      margin-bottom: 3px; }
+      #dealContent .dealEach .dealOtherInfo li span {
+        margin-left: 5px; }
+    #dealContent .dealEach .dealConfirm li {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center; }
+      #dealContent .dealEach .dealConfirm li button, #dealContent .dealEach .dealConfirm li a {
+        font-size: 18px; }
