@@ -91,10 +91,11 @@ $exchangeGoodsDesc:#337ab7;
 					border-radius: 0;
 					border-left: 15px solid;
 					&:hover,
-					&:focus {
+					&:focus,
+					&:active {
 						outline-color: rgba(255, 255, 255, 0);
-						color: snow;
-						transition: .5s;
+						box-shadow: inset 0 0px 0px rgba(255, 255, 255, 0);
+						background-color: #ffffff;
 					}
 				}
 				/* 條件選項樣式 */
@@ -116,10 +117,6 @@ $exchangeGoodsDesc:#337ab7;
 				/* 需求者身份標題及選項顏色 */
 				#btBy {
 					border-color: $byBg;
-					&:hover,
-					&:focus {
-						background-color: darken($byBg, 5%);
-					}
 				}
 				#blockBy {
 					background-color: lighten($byBg, 5%);
@@ -130,10 +127,6 @@ $exchangeGoodsDesc:#337ab7;
 				/* 物資類別標題及選項顏色 */
 				#btClass {
 					border-color: $classBg;
-					&:hover,
-					&:focus {
-						background-color: darken($classBg, 5%);
-					}
 				}
 				#blockClass {
 					background-color: lighten($classBg, 10%);
@@ -144,10 +137,6 @@ $exchangeGoodsDesc:#337ab7;
 				/* 物資需求地標題及選項顏色 */
 				#btLoc {
 					border-color: $locBg;
-					&:hover,
-					&:focus {
-						background-color: darken($locBg, 5%);
-					}
 				}
 				#blockLoc {
 					background-color: lighten($locBg, 10%);
@@ -195,6 +184,7 @@ $exchangeGoodsDesc:#337ab7;
 				.exchangeGoodsOverlay {
 					background-color: $sectionOverlayColor;
 					transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+					z-index: 3;
 					.exchangeGoodsOverlayText {
 						top: 40%;
 						transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -218,6 +208,14 @@ $exchangeGoodsDesc:#337ab7;
 					top: 50%;
 					left: 50%;
 					transform: translateX(-50%) translateY(-50%);
+					z-index: 2;
+				}
+				.imgBackground {
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					background: #ffffff;
+					z-index: 1;
 				}
 			}
 			.exchangeGoodsOverlay {
@@ -240,6 +238,7 @@ $exchangeGoodsDesc:#337ab7;
 				height: 100%;
 				color: $sectionTitleColor;
 				transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+				z-index: 4;
 				/* 文字間距 */
 				.exchangeGoodsContent {
 					letter-spacing: 2px;

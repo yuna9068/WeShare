@@ -41,6 +41,20 @@ $btOrgGoodsColor:#ff3333;
 				padding: 5px 5px 5px 10px;
 			}
 		}
+		/* 清除搜尋條件 */
+		#blockClearSearch {
+			font-size: 18px;
+			margin: 10px 0 10px 0;
+			padding-top: 5px;
+			cursor: pointer;
+			#btClearSearch {
+				color: #868686;
+				padding: 5px 5px 5px 10px;
+				.fa-times{
+					margin-right: 10px;
+				}
+			}
+		}
 	}
 	/* 社福團體簡介 */
 	#sectionOrgAbout {
@@ -115,7 +129,8 @@ $btOrgGoodsColor:#ff3333;
 					position: absolute;
 					overflow: hidden;
 					padding-bottom: 100%;
-					background-color: #fff;
+					backface-visibility: hidden;
+					background-color: #ffffff;
 					.orgImg {
 						position: absolute;
 						width: 100%;
@@ -124,7 +139,6 @@ $btOrgGoodsColor:#ff3333;
 						transform: translateX(-50%) translateY(-50%);
 						backface-visibility: hidden;
 					}
-					backface-visibility: hidden;
 				}
 				/* 地圖 */
 				.orgMap {
@@ -166,7 +180,8 @@ $btOrgGoodsColor:#ff3333;
 						li {
 							color: #666666;
 							letter-spacing: 2px;
-							padding: 10px;
+							margin: 10px;
+							display: inline-block;
 							.fa {
 								color: #ffc107;
 								width: 20px;
@@ -208,7 +223,8 @@ $btOrgGoodsColor:#ff3333;
 						ul {
 							padding: 0px;
 							li {
-								padding: 10px;
+								margin: 10px;
+								display: inline-block;
 								.fa {
 									color: #ff6666;
 									width: 20px;
@@ -220,6 +236,62 @@ $btOrgGoodsColor:#ff3333;
 					}
 				}
 			}
+		}
+	}
+	/* 回到頂端 */
+	#toTop {
+		position: fixed;
+		bottom: 20px;
+		right: -50px;
+		width: 50px;
+		height: 50px;
+		color: #ffc107;
+		font-size: 50px;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+	}
+
+	// toTop進場動畫
+	.toTopRotate {
+		animation: rotate 1s linear forwards;
+	}
+	@keyframes rotate {
+		0% {
+			right: 0px;
+			transform: rotate(0deg);
+		}
+		25% {
+			right: 60px;
+			transform: rotate(-180deg);
+		}
+		50% {
+			right: 120px;
+			transform: rotate(-360deg);
+		}
+		75% {
+			right: 60px;
+			transform: rotate(-180deg);
+		}
+		100% {
+			right: 20px;
+			transform: rotate(0deg);
+		}
+	}
+
+	// toTop離場動畫
+	.toTopLeave {
+		animation: rotateLeave 1s linear forwards;
+	}
+	@keyframes rotateLeave {
+		0% {
+			right: 20px;
+			transform: rotate(0deg);
+		}
+		100% {
+			right: -50px;
+			transform: rotate(360deg);
+			color: #fbfbfb;
 		}
 	}
 }

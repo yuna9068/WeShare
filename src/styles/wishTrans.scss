@@ -17,12 +17,21 @@
 			overflow: hidden;
 			padding-bottom: 100%;
 			margin: auto;
+			margin-top: 10px;
 			#wTransImg {
 				position: absolute;
 				width: 100%;
 				top: 50%;
 				left: 50%;
 				transform: translateX(-50%) translateY(-50%);
+				z-index: 2;
+			}
+			#imgBackground {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				background: #ffffff;
+				z-index: 1;
 			}
 		}
 		/* 右邊物資資訊 */

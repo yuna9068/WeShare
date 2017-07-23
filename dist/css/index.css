@@ -55,7 +55,7 @@ body {
 
 /* 標題及文字樣式 */
 .sectionTitle {
-  margin: 60px 0 60px 0;
+  margin: 60px 0 40px 0;
   border-radius: 5px; }
   .sectionTitle .titleLeft {
     font-size: 23px;
@@ -70,6 +70,7 @@ body {
 .itemA {
   position: relative;
   display: block;
+  padding-bottom: 100%;
   border-radius: 5px;
   overflow: hidden; }
 
@@ -88,12 +89,27 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
   color: #FFFFFF;
-  font-size: 24px; }
+  font-size: 24px;
+  z-index: 3; }
 
 /* 物資圖片樣式 */
 .itemImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   margin: auto;
-  max-height: 100%; }
+  max-height: 100%;
+  z-index: 2; }
+
+/* 物資圖片背景 */
+.imgBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  z-index: 1; }
 
 /* 物資文字樣式 */
 .wishItem,
@@ -126,27 +142,16 @@ body {
     .giveItem .itemBy a,
     .exchangeItem .itemBy a {
       color: #888888; }
-      .wishItem .itemBy a span > span,
-      .giveItem .itemBy a span > span,
-      .exchangeItem .itemBy a span > span {
+      .wishItem .itemBy a > span > span,
+      .giveItem .itemBy a > span > span,
+      .exchangeItem .itemBy a > span > span {
         font-size: 20px;
         color: #01B468; }
-      .wishItem .itemBy a h5 span,
-      .giveItem .itemBy a h5 span,
-      .exchangeItem .itemBy a h5 span {
-        color: black; }
-
-#imgGet {
-  position: fixed;
-  left: 5%;
-  bottom: 5%; }
-
-#imgCanvas {
-  position: fixed;
-  left: 5%;
-  bottom: 10%;
-  width: 500px;
-  height: 500px;
-  overflow: hidden; }
-  #imgCanvas canvas {
-    max-width: 100%; }
+      .wishItem .itemBy a h5,
+      .giveItem .itemBy a h5,
+      .exchangeItem .itemBy a h5 {
+        text-align: right; }
+        .wishItem .itemBy a h5 span,
+        .giveItem .itemBy a h5 span,
+        .exchangeItem .itemBy a h5 span {
+          color: black; }
