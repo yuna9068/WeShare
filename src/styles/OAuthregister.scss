@@ -1,0 +1,60 @@
+body {
+	background-color: #f8fbf9;
+}
+#sectionOAuthregister {
+	min-height: calc(100vh - 306px);
+	.register_main {
+		#formOAuth {
+			#titleOAuth {
+				font-size: 28px;
+				text-align: center;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				color: #3381b1;
+				font-weight: bold;
+				letter-spacing: 2px;
+			}
+			label {
+				text-align: center;
+				font-size: 24px;
+				width: 100%;
+				color: #6495ed;
+			}
+			#orgtable {
+				#tableOAuth {
+					margin-top: 20px;
+					border: 1px solid #cccccc;
+					font-size: 18px;
+					td {
+						vertical-align: middle;
+						.fa-heart {
+							color: #ff6666;
+							margin-right: 10px;
+							margin-left: 5px;
+						}
+					}
+					input {
+						font-size: 18px;
+					}
+				}
+			}
+			#blockSubmit {
+				margin-top: 30px;
+				#submit {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					margin: auto;
+					width: 100px;
+					height: 45px;
+					border-radius: 5px;
+					font-size: 18px;
+				}
+			}
+		
+			
+		}
+	}
+}
