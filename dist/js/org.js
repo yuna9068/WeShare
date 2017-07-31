@@ -19,16 +19,16 @@ function showData(data) {
 					<div class="orgContactList">
 						<ul type="none">
 							<li><i class="fa fa-phone" aria-hidden="true"></i>
-								<span>03-3353545</span>
+								<span>02-12345678</span>
 							</li><br>
 							<li><i class="fa fa-envelope" aria-hidden="true"></i>
-								<a href="mailto:winnie@ecpat.org.tw">winnie@ecpat.org.tw</a>
+								<a href="mailto:orgMail@mail.com">orgMail@mail.com</a>
 							</li><br>
 							<li><i class="fa fa-home" aria-hidden="true"></i>
 								<span>${data[i].address}</span>
 							</li><br>
 							<li><i class="fa fa-globe" aria-hidden="true"></i>
-								<a href="http://www.ecpat.org.tw" target="_blank">http://www.ecpat.org.tw</a>
+								<a href="http://www.google.com" target="_blank">http://www.google.com</a>
 							</li><br>
 						</ul>
 						<a href="wish.html" type="button" class="orgGoods btn btn-default" target="_blank">查看募集物資</a>
@@ -43,16 +43,16 @@ function showData(data) {
 								<span>兒少福利</span>
 							</li><br>
 							<li><i class="fa fa-heart" aria-hidden="true"></i>社福負責人：
-								<span>高亘瑩</span>
+								<span>陳小明</span>
 							</li><br>
 							<li><i class="fa fa-heart" aria-hidden="true"></i>立案核准字號：
-								<span>台內社字第8375183號</span>
+								<span>台內社字第*******號</span>
 							</li><br>
 							<li><i class="fa fa-heart" aria-hidden="true"></i>勸募許可字號：
-								<span>衛部救字第1051360904號</span>
+								<span>衛部救字第******號</span>
 							</li><br>
 							<li>
-								<span>提倡兒童人權、預防兒少商業性剝削、兒少上網安全與反人口販運，我們期望匯集眾人的力量，協助受傷的孩子擁有能力與機會，如鷹展翅高飛。</span>
+								<span>社福團體簡介資訊_社福團體簡介資訊_社福團體簡介資訊_社福團體簡介資訊_社福團體簡介資訊_社福團體簡介資訊_社福團體簡介資訊</span>
 							</li><br>
 						</ul>
 					</div>

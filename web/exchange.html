@@ -3,19 +3,33 @@
 
 <head>
 	<meta charset="utf-8">
+	<!-- 什麼版本IE 就用什麼版本的標準模式 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 響應式網頁設計用來設定行動裝置瀏覽網頁的寬度和基本設定，initial-scale表示初始縮放-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" type="text/css" href="../dist/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../dist/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" type="text/css" href="../dist/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!-- Animate CSS-->
 	<link rel="stylesheet" type="text/css" href="../dist/bower_components/animate.css/animate.min.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
 	<!-- 個人化 -->
 	<link rel="stylesheet" type="text/css" href="../dist/css/header.css">
 	<link rel="stylesheet" type="text/css" href="../dist/css/exchange.css">
 	<link rel="stylesheet" type="text/css" href="../dist/css/footer.css">
+
+	<!-- jQuery -->
+	<script src="../dist/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="//cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Bootstrap JavaScript -->
+	<script src="../dist/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="//cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- 個人化 -->
+	<script src="../dist/js/bundle.js"></script>
+	<script src="../dist/js/login.js"></script>
 
 	<!-- 登入參數 -->
 	<script>
@@ -24,16 +38,6 @@
 		var indid = "${LoginOK.indid}";
 		var rememberMe = "${sessionScope.rememberMe}";
 	</script>
-
-	<!-- jQuery -->
-	<script src="../dist/bower_components/jquery/dist/jquery.min.js"></script>
-	<!-- Bootstrap JavaScript -->
-	<script src="../dist/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<!-- Holder Background -->
-	<script src="//cdn.jsdelivr.net/holder/2.9.4/holder.min.js"></script>
-	<!-- 個人化 -->
-	<script src="../dist/js/bundle.js"></script>
-	<script src="../dist/js/login.js"></script>
 
 	<!-- Favicon小圖示 -->
 	<link rel="icon" href="../dist/img/WeShare_icon.png" type="image/gif" sizes="16x16">
@@ -87,7 +91,7 @@
 					</li>
 				</ul>
 
-				<!-- 右選單 -->
+				<!-- 右選單-->
 				<ul id="navMenuRight" class="nav navbar-nav navbar-right">
 					<li class="beforeLogin">
 						<a href="login.html" id="navLogin">
@@ -106,12 +110,12 @@
 							<li><a href="#">物資箱</a></li>
 							<li><a href="#">站內信</a></li>
 							<li class="divider"></li>
-							<li><a href="#">登出</a></li>
+							<li><a data-toggle="modal" data-target="#logoutMsg">登出</a></li>
 						</ul>
 					</li>
 					<li class="afterLogin">
 						<a id="navMemberImg">
-							<img src="../dist/img/icon_member1.png" width="40" alt="MemberImg">
+							<img class="img-circle" src="../dist/img/icon_member1.png" width="40" alt="MemberImg">
 							<!--Icons made by Freepik from Flaticon(http://www.freepik.com)-->
 						</a>
 					</li>
@@ -126,7 +130,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="https://www.facebook.com" id="navFBImg">
+						<a href="https://www.facebook.com" id="navFBImg" target="_blank">
 							<i class="fa fa-facebook-official" aria-hidden="true"></i>
 							<!--<img src="../dist/img/icon_facebook.png" width="40" alt="FBImg">-->
 							<!--Icons made by Freepik from Flaticon(http://www.freepik.com)-->
@@ -146,7 +150,7 @@
 					</div>
 					<!-- 內容(導入logout.html) -->
 					<div class="modal-body">
-						<span>您已經登出(server)</span>
+						<span>您已經登出</span>
 					</div>
 					<!-- 關閉鈕 -->
 					<div class="modal-footer">
@@ -795,16 +799,16 @@
 					<div class="footerSocial text-center">
 						<div class="row">
 							<div class="col-xs-6 col-sm-offset-2 col-sm-2 col-md-offset-2 col-md-2 col-lg-offset-2 col-lg-2">
-								<a href="https://www.facebook.com"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+								<a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 							</div>
 							<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-								<a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+								<a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
 							</div>
 							<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-								<a href="https://plus.google.com"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+								<a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
 							</div>
 							<div class="col-xs-6 col-sm-2 col-md-2 col-lg-2">
-								<a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
