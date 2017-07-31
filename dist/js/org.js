@@ -9,7 +9,7 @@ function showData(data) {
 				</div>
 
 				<div class="orgMap blockUpper">
-					<iframe class="iframeMap" frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=${data[i].address}&z=15&output=embed&t='></iframe>
+					<iframe class="iframeMap" frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='https://maps.google.com.tw/maps?f=q&hl=zh-TW&geocode=&q=${data[i].address}&z=15&output=embed&t='></iframe>
 				</div>
 			</div>
 
